@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/asparilac/static/css/main.22bb1d69.chunk.css",
-    "main.js": "/asparilac/static/js/main.7bda1d87.chunk.js",
-    "main.js.map": "/asparilac/static/js/main.7bda1d87.chunk.js.map",
+    "main.js": "/asparilac/static/js/main.975d8794.chunk.js",
+    "main.js.map": "/asparilac/static/js/main.975d8794.chunk.js.map",
     "runtime-main.js": "/asparilac/static/js/runtime-main.bb8fc490.js",
     "runtime-main.js.map": "/asparilac/static/js/runtime-main.bb8fc490.js.map",
-    "static/js/2.b4c60ecc.chunk.js": "/asparilac/static/js/2.b4c60ecc.chunk.js",
-    "static/js/2.b4c60ecc.chunk.js.map": "/asparilac/static/js/2.b4c60ecc.chunk.js.map",
+    "static/js/2.d8d637be.chunk.js": "/asparilac/static/js/2.d8d637be.chunk.js",
+    "static/js/2.d8d637be.chunk.js.map": "/asparilac/static/js/2.d8d637be.chunk.js.map",
     "static/js/3.83308144.chunk.js": "/asparilac/static/js/3.83308144.chunk.js",
     "static/js/3.83308144.chunk.js.map": "/asparilac/static/js/3.83308144.chunk.js.map",
     "index.html": "/asparilac/index.html",
     "static/css/main.22bb1d69.chunk.css.map": "/asparilac/static/css/main.22bb1d69.chunk.css.map",
-    "static/js/2.b4c60ecc.chunk.js.LICENSE.txt": "/asparilac/static/js/2.b4c60ecc.chunk.js.LICENSE.txt",
+    "static/js/2.d8d637be.chunk.js.LICENSE.txt": "/asparilac/static/js/2.d8d637be.chunk.js.LICENSE.txt",
     "static/media/Headerimg.5ab9b7ea.png": "/asparilac/static/media/Headerimg.5ab9b7ea.png",
     "static/media/asparlogo.db6a13e0.png": "/asparilac/static/media/asparlogo.db6a13e0.png",
     "static/media/logo2.8affc359.png": "/asparilac/static/media/logo2.8affc359.png"
   },
   "entrypoints": [
     "static/js/runtime-main.bb8fc490.js",
-    "static/js/2.b4c60ecc.chunk.js",
+    "static/js/2.d8d637be.chunk.js",
     "static/css/main.22bb1d69.chunk.css",
-    "static/js/main.7bda1d87.chunk.js"
+    "static/js/main.975d8794.chunk.js"
   ]
 }
