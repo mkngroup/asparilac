@@ -22,7 +22,7 @@ import {
   Technology,
 } from "../src/pages";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
