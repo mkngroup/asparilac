@@ -25,6 +25,7 @@ export const Cartdata = [
     logo: "https://image.freepik.com/free-photo/red-white-pills-wooden-spoon_23-2147983181.jpg",
     image:"https://cdn.yemek.com/uploads/2017/09/sari-kantaron-faydalari-3.jpg",
   },
+ 
   
   
 ];
