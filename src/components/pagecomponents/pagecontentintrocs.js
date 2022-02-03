@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
 
+  
+
+  @media screen and (max-width: 1000px){
+    padding: 5px;
+  }
+
   .br_show{
     display: block;
   }

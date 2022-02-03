@@ -11,8 +11,24 @@ export const Container = styled.div`
   @media screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
+    
   }
+
+  
+`;
+
+export const MobileImg = styled.div` 
+position : absolute ;
+display: none;
+
+@media screen and (max-width : 500px){
+  display: block;
+}
+
+img{
+  width: 100%;
+}
+
 `;
 export const HeaderText = styled.div`
   position: relative;
@@ -23,14 +39,18 @@ export const HeaderText = styled.div`
   margin: 50px 50px 0 50px;
 
   @media screen and (max-width: 900px) {
-    
   }
   @media screen and (max-width: 500px) {
     margin: 35px 10px 0 10px;
 
-    p{
-      margin: 10px 0 0 0 ;
+    p {
+      margin: 10px 0 0 0;
+      font-size: 15.5px;
+      font-weight: 500;
 
+      @media screen and (max-width: 500px){
+        color: white;
+      }
     }
   }
 `;
@@ -38,8 +58,9 @@ export const HeaderImage = styled.div`
   max-height: 100%;
   max-width: 100%;
 
-  @media screen and (max-width:500px){
-      display: none;
+  @media screen and (max-width: 500px) {
+    display: none;
+    
   }
 `;
 export const ImgLogo2 = styled.img`
@@ -59,6 +80,7 @@ export const BtnContainer = styled.div`
   justify-content: space-around;
   margin-top: 35px;
   margin-bottom: 15px;
+  /* background-color: grey; */
 
   @media screen and (max-width: 1048px) {
     margin-top: 15px;
@@ -71,11 +93,45 @@ export const BtnContainer = styled.div`
     flex-direction: column;
     margin: 35px 10px 20px 10px;
   }
+
+  .btnnew {
+    width: 100%;
+    margin: 0 3px;
+    height: 35px;
+    color: white;
+    background-color: #185adb;
+    border: none;
+    border-radius: 7px;
+    font-size: 15.5px;
+    -webkit-box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.46);
+    box-shadow: 3px 7px 15px -5px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    
+
+    @media screen and (max-width: 500px){
+      margin: 5px 0;
+    }
+    @media screen and (min-width: 501px){
+      height: 35px;
+    }
+    @media screen and (min-width: 900px){
+      height: 45px;
+    }
+  }
+
+  .header_link{
+    color: white;
+    text-decoration: none;
+  }
 `;
 
 export const Btn1 = styled.button`
   display: block;
-  width: 50%;
+  width: 100%;
   height: 37px;
   margin: 5px 15px;
   background-color: #185adb;
@@ -84,6 +140,7 @@ export const Btn1 = styled.button`
   border: none;
   transition: 0.5s ease-in-out;
   font-size: 15.5px;
+
   -webkit-box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.46);
   box-shadow: 3px 7px 15px -5px rgba(0, 0, 0, 0.5);
 
@@ -131,4 +188,3 @@ export const Btn2 = styled.button`
     margin: 10px 0;
   }
 `;
-

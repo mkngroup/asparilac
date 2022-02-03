@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { TabData } from "../../data/pagestabcontent";
 import logo2 from "../../assets/logo2.png";
-
 
 import {
   Sidebar_logo,
   NewSidebarContainer,
   SidebarWrapper,
+  MobileSidebar,
 } from "./pagesidebarcs";
+import { FaWindowClose, FaBars, FaHome } from "react-icons/fa";
 
 const PageSidebar = (props) => {
+  const [Sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!Sidebar);
   return (
     <>
       <SidebarWrapper>
@@ -35,6 +37,46 @@ const PageSidebar = (props) => {
 };
 
 export default PageSidebar;
+
+export const Mobilepagesidebar = (props) => {
+  const [Sidebar, setSidebar] = useState(false);
+  const showSidebar = () => setSidebar(!Sidebar);
+  return (
+    <>
+      <MobileSidebar>
+        <div className="Navbar">
+          <Link to="/">
+            <img src={logo2} alt="" className="mobile_logo_img" />
+          </Link>
+          <FaBars className="faopen" onClick={showSidebar} />
+          <Link to="/">
+            <FaHome className="faclose" />
+          </Link>
+        </div>
+        <div className="sidebar_toggle">
+          <div className={Sidebar ? "sidebar_active" : "sidebar_none"}>
+            <div className="exit_container">
+              <Link to="/">
+                <img src={logo2} alt="" className="mobile_logo_img" />
+              </Link>
+              <FaWindowClose className=" faclose" onClick={showSidebar} />
+              <Link to="/">
+                <FaHome className="faclose" />
+              </Link>
+            </div>
+            <div className="menu_container">
+              <ul className="menu">
+                {props.tabdata.map((data, index) => {
+                  return <Newsidebar item={data} key={index} />;
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </MobileSidebar>
+    </>
+  );
+};
 
 const Newsidebar = ({ item }) => {
   const [subnav, setSubnav] = useState(false);

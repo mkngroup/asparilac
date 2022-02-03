@@ -4,14 +4,19 @@ export const Container = styled.div`
   width: 100%;
   margin-top: 50px;
 
+  @media screen and (max-width: 1000px) {
+    padding: 5px;
+  }
+
   h3 {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-
-    &:hover {
-      .con_icons {
-        display: block;
+    @media screen and (min-width: 1000px) {
+      &:hover {
+        .con_icons {
+          display: block;
+        }
       }
     }
 

@@ -10,7 +10,7 @@ const Pagecontentintro = (props) => {
     <Container>
       {/* intro metni . parag1 = sol span=orta parag1_2= sag
       p2=ikinci yazi */}
-      <div>
+      <div className="container_wrapper">
         <p className="p1">
           {props.parag1}
           <span className="p1_span">{props.parag1_span}</span>
@@ -38,13 +38,10 @@ const Pagecontentintro = (props) => {
             <Link to={data.shortmenulink} className="sm_link">
               <li className="short_menu_links">{data.shortmenuitem}</li>
             </Link>
-            // <LinkS to={data.shortmenuscroll} smooth={true}>
-            //   <li className="short_menu_links">{data.shortmenuitem}</li>
-            // </LinkS>
           );
         })}
       </ul>
-      <div>
+      <div className="container_tesis">
           <Tesisimiz
             table1_class={props.table1_class}
             table1_headertext={props.table1_headertext}
@@ -87,6 +84,11 @@ const Tablecontainer = styled.div`
     grid-template-columns: 25% 25% 25% 25%;
     padding: 0 50px 50px 50px;
 
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: 50% 50%;
+      padding:  0 10px 50px 10px;
+    }
+
     .grid_items {
       display: flex;
       flex-direction: column;
@@ -99,6 +101,10 @@ const Tablecontainer = styled.div`
       transition:all 1s ease-in-out;
       cursor: pointer;
       padding: 0 5px 0 5px;
+
+      @media screen and (max-width: 1000px) {
+        height: 250px;
+      }
       &:hover{
         span{
           transform: scale(1.3);

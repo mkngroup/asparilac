@@ -1,10 +1,23 @@
-import React from 'react'
+import React from "react";
+import { Container, Wrapepr } from "./contactcs";
+import content1 from '../../assets/content1.jpg';
+;
+
 
 const Contact = () => {
-    return (
-        <div>
-            <h1>Contact</h1>
-        </div>
-    )
-}
+  return (
+      <Container>
+          <div className="wrapper">
+              <div className="image_container">
+                  <img src={content1} alt="" />
+              </div>
+              <div className="text_container">
+                  <h1>bizimle iletisim kurun</h1>
+                  <p>telefon</p>
+              </div>
+          </div>
+      </Container>
+    
+  );
+};
 export default Contact;

@@ -4,6 +4,11 @@ export const Container = styled.div`
   width: 100%;
   margin-top: 50px;
 
+  @media screen and (max-width: 1000px){
+    padding: 5px;
+    margin-top: 5px;
+  }
+
   h3 {
     margin-bottom: 10px;
     display: flex;
@@ -12,6 +17,9 @@ export const Container = styled.div`
     &:hover{
         .fason_header_icon{
             display: block;
+            @media screen and (max-width: 500px){
+              display: none;
+            }
         }
     }
 

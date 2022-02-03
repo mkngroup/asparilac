@@ -25,7 +25,11 @@ const Homepage = () => {
             cardgrname={data.groupname}
             cardtitle={data.title}
             cardimage={data.image}
+            alttext = {data.alttext}
             span_name = {data.span_title}
+            linktogroup = {data.linktogroup}
+            linktotitle={data.linktotitle}
+            descrip = {data.descrip}
           />
         ))}
       </Main>

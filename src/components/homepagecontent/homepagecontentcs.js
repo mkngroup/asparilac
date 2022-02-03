@@ -36,6 +36,10 @@ export const CardWraapper = styled.div`
 `;
 
 export const HeaderText = styled.div`
+  .link_class {
+    text-decoration: none;
+    color: none;
+  }
   height: 50px;
   margin-bottom: 5px;
   padding: 0 5px 0 5px;
@@ -48,6 +52,10 @@ export const HeaderText = styled.div`
   align-items: center;
 `;
 export const HeaderCircleImg = styled.div`
+  .link_class {
+    text-decoration: none;
+    color: none;
+  }
   display: flex;
   background-color: white;
   height: 40px;
@@ -63,6 +71,10 @@ export const HeaderCircleImg = styled.div`
 `;
 
 export const MobileShowMore = styled.div`
+  .link_class {
+    text-decoration: none;
+    color: none;
+  }
   display: none;
 
   @media screen and (max-width: 500px) {
@@ -90,9 +102,8 @@ export const MobileShowMore = styled.div`
       white-space: normal;
 
       border-radius: 3px;
-      .header_span{
+      .header_span {
         margin-right: 5px;
-        
       }
     }
   }
@@ -110,6 +121,10 @@ export const ResponsiveHEaderTitle = styled.div`
   }
 `;
 export const HeaderTitle = styled.div`
+  .link_class {
+    text-decoration: none;
+    color: black;
+  }
   position: relative;
   margin-left: 5px;
   color: black;
@@ -122,6 +137,10 @@ export const HeaderTitle = styled.div`
   }
 `;
 export const HeaderItem = styled.div`
+.link_class {
+    text-decoration: none;
+    color: #8e8e8e;
+  }
   display: flex;
   align-items: center;
   position: absolute;
@@ -169,8 +188,8 @@ export const CardImage = styled.div`
   text-align: center;
 
   .image {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     object-fit: fill;
     border-radius: 2px;
   }
@@ -185,8 +204,6 @@ export const CardImage = styled.div`
   }
 `;
 export const CardText = styled.div`
-  display: block;
-
   margin-left: 10px;
   width: 100%;
   padding: 10px;
@@ -195,6 +212,9 @@ export const CardText = styled.div`
 
   background-color: #f5f5f5;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -202,6 +222,7 @@ export const CardText = styled.div`
 
     max-height: 390px;
     overflow: auto;
+    font-size: 25px;
   }
 
   @media screen and (max-width: 900px) {
@@ -240,6 +261,10 @@ export const CardNav = styled.div`
 export const CardNavMobile = styled.div`
   display: none;
 
+  .link_class {
+    text-decoration: none;
+  }
+
   p {
     display: flex;
     align-items: center;
@@ -258,19 +283,17 @@ export const CardNavMobile = styled.div`
 
     border-radius: 3px;
 
-    .cardnav_mobile_spanicon{
+    .cardnav_mobile_spanicon {
       margin-left: 5px;
     }
   }
-  .card_go_up_mobile{
+  .card_go_up_mobile {
     position: absolute;
     right: 20px;
     font-size: 25px;
     color: #ffa500;
     cursor: pointer;
   }
-
-  
 
   @media screen and (max-width: 500px) {
     display: flex;
@@ -285,6 +308,10 @@ export const CardNavMobile = styled.div`
 `;
 
 export const CardNav_container1 = styled.div`
+  .link_class {
+    text-decoration: none;
+    color: none;
+  }
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -312,6 +339,10 @@ export const CardNav_container1 = styled.div`
 `;
 
 export const CardNav_container2 = styled.div`
+  .link_class {
+    text-decoration: none;
+    color: none;
+  }
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -335,12 +366,12 @@ export const CardNav_container2 = styled.div`
     border-radius: 3px;
   }
 
-  .card_go_up{
+  .card_go_up {
     font-size: 25px;
     color: #ffa500;
     cursor: pointer;
   }
-  
+
   @media screen and (max-width: 500px) {
     display: none;
   }

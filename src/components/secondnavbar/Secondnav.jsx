@@ -18,36 +18,32 @@ const Secondnav = () => {
           <NavMenu>
             <MobileNavItem>
 
-              <LinkS to="vitamin-cvitamin" smooth={true}>
-                <p>Vitamin</p>
+              <LinkS to="gida-kolajen-tip4" smooth={true}>
+                <p>Gıda Takviyesi</p>
               </LinkS>
-
               <p className="nav-line">|</p>
-
+              <LinkS to="uretim-fason" smooth={true}>
+                <p>Fason Üretimi</p>
+              </LinkS>
+              <p className="nav-line">|</p>
+              <LinkS to="vitamin-cvitamin" smooth={true}>
+                <p>Vitamim</p>
+              </LinkS>
+              <p className="nav-line">|</p>
               <LinkS to="kozmetik-yuztemizleme" smooth={true}>
                 <p>Kozmetik</p>
               </LinkS>
+              <p className="nav-line">|</p>
+              <LinkS to="laboratuvar-home" smooth={true}>
+                <p>Laboratuvar</p>
+              </LinkS>
+              <p className="nav-line">|</p>
+              <LinkS to="makinalar-kapsuldolum" smooth={true}>
+                <p>Makine</p>
+              </LinkS>
+              <p className="nav-line">|</p>
 
-              <p className="nav-line">|</p>
-              <LinkS to="kapsul-gidatakviyesi" smooth={true}>
-                <p>Kapsul</p>
-              </LinkS>
-              <p className="nav-line">|</p>
-              <LinkS>
-                <p>Cinsel - Saglik</p>
-              </LinkS>
-              <p className="nav-line">|</p>
-              <LinkS>
-                <p>Surup</p>
-              </LinkS>
-              <p className="nav-line">|</p>
-              <LinkS>
-                <p>Vitamin</p>
-              </LinkS>
-              <p className="nav-line">|</p>
-              <LinkS>
-                <p>Vitamin</p>
-              </LinkS>
+              
             </MobileNavItem>
 
             <NavItem>

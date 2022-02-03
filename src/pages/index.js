@@ -17,3 +17,7 @@ export { default as Mineraller} from './productionpages/Mineraller'
 export { default as Bitkiler} from './productionpages/Bitkiler'
 export { default as Kolajen} from './productionpages/Kolajen'
 export { default as Fasonuretimpage} from './productionpages/Fasonuretimpage'
+
+//teknoloji sayfa
+export { default as Makinalar} from './technologypages/Makinalar'
+export { default as Laboratuvar} from './technologypages/Laboratuvar'

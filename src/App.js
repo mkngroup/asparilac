@@ -12,6 +12,8 @@ import {
   Vucutbakim,
   Sacbakimi,
   Fasonuretimpage,
+  Makinalar,
+  Laboratuvar,
 } from "./pages";
 import {
   Homepage,
@@ -36,6 +38,8 @@ class App extends Component {
           <Route path="/contact" element={<Contact />} />
           <Route path="/production" element={<Production />} />
           <Route path="/technology" element={<Technology />} />
+          <Route path="/technology/makinalar" element={<Makinalar />} />
+          <Route path="/technology/laboratuvar" element={<Laboratuvar />} />
           <Route path="/production/ciltbakimi" element={<CiltBakimi />} />
           <Route path="/production/vucutbakimi" element={<Vucutbakim />} />
           <Route path="/production/sacbakimi" element={<Sacbakimi />} />

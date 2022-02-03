@@ -1,13 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { Pagecontentintro, PageSidebar } from "../../components";
+import { Mobilepagesidebar } from "../../components/pagesidebar/PageSidebar";
 import { SidebarHeader, TabData } from "../../data/pagestabcontent";
 
 const Fasonuretimpage = () => {
   return (
     <>
       <PageContainer>
-        <PageSidebar tabdata={TabData} sidebarheader={SidebarHeader.production}/>
+        <div className="fason_sidebar">
+          <PageSidebar
+            tabdata={TabData}
+            sidebarheader={SidebarHeader.production}
+          />
+        </div>
+        <div className="fason_mobilesidebar">
+          <Mobilepagesidebar tabdata={TabData} sidebarheader={SidebarHeader.production} />
+        </div>
         <ContentWrapper>
           <HeaderContainer>
             <img
@@ -203,25 +212,36 @@ const Contents = () => {
 
 const ContentDescrip = styled.div`
   padding: 0 30px 0 30px;
+
+  
 `;
 
 const IntroContainer = styled.div`
   margin: 50px 0 50px 0;
   .introtext_div {
     padding: 0 30px 0 30px;
+    @media screen and (max-width: 1000px){
+    padding: 0 10px 0 10px;
+  }
 
     .parag_div {
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-      /* background-color: #fbfbfb */
+      
     }
 
     .parag_imagediv {
       display: flex;
-      /* margin-top: 10px; */
       align-items: center;
+
+      @media screen and (max-width: 1000px) {
+        flex-direction: column;
+      }
 
       img {
         width: 50%;
+        @media screen and (max-width: 1000px){
+          width: 100%;
+        }
       }
 
       p {
@@ -254,7 +274,13 @@ const IntroContainer = styled.div`
 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    }
+    
+        @media screen and (max-width: 1000px){
+          line-height: 1.50;
+          text-align: center;
+          padding: 5px 0 5px 0;
+        }
+      }
 
     .parag_3 {
       font-size: 20px;
@@ -272,10 +298,13 @@ const IntroContainer = styled.div`
     margin-left: 30px;
     margin-right: 30px;
 
+    @media screen and (max-width: 1000px) {
+      margin: 25px 10px 0 10px;
+    }
+
     .privatelabel_div {
       margin-top: 50px;
       margin-bottom: 20px;
-
 
       .sections {
         margin: 30px 0 50px 0;
@@ -284,6 +313,13 @@ const IntroContainer = styled.div`
         justify-content: space-evenly;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         background-color: #bada55;
+
+        @media screen and (max-width: 1000px){
+          display: grid;
+          grid-template-columns: 50% 50%;
+          
+          
+        }
         .items {
           background-color: #bada55;
           width: 150px;
@@ -296,6 +332,11 @@ const IntroContainer = styled.div`
           border-radius: 20px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           transition: 0.3s ease;
+
+          @media screen and (max-width: 1000px){
+            width: auto;
+            margin: 10px 10px;
+          }
 
           &:hover {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -331,15 +372,26 @@ const TableContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 100px;
 
+  @media screen and (max-width: 1000px){
+    margin: 50px 0;
+  }
+
   .grid_headercontainer {
     display: flex;
     align-items: center;
     justify-content: center;
 
+    
+
     .grid_headertext {
       color: white;
       text-transform: uppercase;
       margin-top: 50px;
+
+      @media screen and (max-width: 1000px){
+        text-align: center;
+        margin: 25px 0;
+      }
     }
   }
 
@@ -347,6 +399,11 @@ const TableContainer = styled.div`
     padding: 50px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+
+    @media screen and (max-width: 1000px){
+      padding: 5px;
+      grid-template-columns: 50% 50%;
+    }
 
     .grid_items {
       display: flex;
@@ -365,6 +422,25 @@ const PageContainer = styled.div`
   flex-direction: row;
   position: relative;
   height: 100vh;
+  
+
+  .fason_sidebar{
+    display: block;
+    
+    
+
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
+  }
+
+  .fason_mobilesidebar{
+    display: none;
+
+    @media screen and (max-width: 1000px){
+      display: block;
+    }
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -374,12 +450,24 @@ const ContentWrapper = styled.div`
   background-color: white;
   border-radius: 3px;
   overflow: auto;
+  margin-left: 30px;
 `;
 
 const HeaderContainer = styled.div`
   width: 100%;
   height: 300px;
   display: flex;
+
+  img{
+    width: 100%;
+
+    @media screen and (max-width: 1000px) {
+      position: relative;
+      width: 100%;
+      height: auto;
+      opacity: 1;
+    }
+  }
 
   h1 {
     position: relative;
@@ -390,9 +478,38 @@ const HeaderContainer = styled.div`
     width: 100%;
     font-size: 40px;
 
+    @media screen and (max-width: 1000px){
+      display: block;
+      
+      position: absolute;
+      /* top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+
+      top: 100px;
+
+      font-size: 25px;
+      line-height: 1;
+
+      text-align: center;
+
+      width: 100%;
+
+      color: black;
+      
+
+      p {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    
+  }
+
     p {
       font-size: small;
       color: black;
     }
+
+    
   }
 `;

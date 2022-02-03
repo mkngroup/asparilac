@@ -8,6 +8,11 @@ import {
   BsJournalMedical,
 } from "react-icons/bs";
 
+import headermakinalar from '../assets/headermakinalar.jpg';
+import headerlaboratory from '../assets/headerlaboratory.jpg';
+;
+
+
 export const Tekbaslangic = {
   headerimage:
     "https://image.freepik.com/free-photo/biometric-technology-background-with-fingerprint-scanning-system-virtual-screen-digital-remix_53876-104197.jpg",
@@ -126,12 +131,13 @@ export const Tekbaslangic = {
     {
       contentheadertext: "Makinalar ve Kapasiteler",
       contentheaderlink: "#",
-      contentdescrip: "lorem",
+      contentdescrip:
+        "Üretimde kullandığımız makinalar tamamıyla paslanmaz çelikten oluşur bundan dolayı yüksek derecede hijyenik bir üretim ve paketleme sağlamaktadır. Makinalarımız tam otomatik bir düzenekten oluşur, üretim ve paketleme çok hızlı gerçekleşmektedir.",
     },
     {
       contentheadertext: "Laboratuvar",
       contentheaderlink: "#",
-      contentdescrip: "lorem",
+      contentdescrip: "Üretim sonrası çıkan ürünlerin belli değerlerde olması gerekiyor. GMP standartlarına göre fabrikaya gelen hammaddelerin test edilip, izlenebilirlik numarası verilir ve çıkan son ürünlerde belli testlere tabii tutulmaktadır. Laboratuvarımızdaki cihazlarla nem tayini, toz ve sıvı yoğunluğu tespiti, tablet kırılganlığı tespiti, tablet ve kapsül çözünme testi, tablet aşınma testi ve sıkılaştırılmış toz yoğunluğuna bakılmaktadır.",
     },
     {
       contentheadertext: "Reklam & Tasarım",
@@ -142,6 +148,400 @@ export const Tekbaslangic = {
       contentheadertext: "Smart Depo",
       contentheaderlink: "#",
       contentdescrip: "lorem",
+    },
+  ],
+
+  alert_classblue: "alert_table_blue",
+  alert_header: "Formulasyon",
+  alert_itemcontents: [
+    {
+      alert_item: "tablet",
+    },
+    {
+      alert_item: "surup",
+    },
+    {
+      alert_item: "toz",
+    },
+    {
+      alert_item: "krem",
+    },
+    {
+      alert_item: "losyon",
+    },
+  ],
+};
+export const Tekmakinalar = {
+  headerimage: headermakinalar ,
+  headerimagealt: "ilacuretimmakinalar",
+  headertext: "Üretim Makinaları",
+  headerbckcolor: "#000B17",
+  txtcolor: "white",
+  headeralttext: "ASPAR ILAÇ TEKNOLOJİ BÖLÜMÜ",
+  mobiletxtcolor: "white",
+  mobilebckcolor : "black",
+
+  parag1: "Bu sayfa, Aspar Ilac ",
+  parag1_span: "Üretim makinaları ve Kapasiteleri",
+  parag1_2: " hakkında gerekli bilgi ve kaynakları içermektedir.",
+  parag2:
+    "",
+
+  secondparagbr: "br_show",
+  parag3:
+    "Üretimde kullandığımız makinalar tamamıyla paslanmaz çelikten oluşur bundan dolayı yüksek derecede hijyenik bir üretim ve paketleme sağlamaktadır. Makinalarımız tam otomatik bir düzenekten oluşur, üretim ve paketleme çok hızlı gerçekleşmektedir.",
+  parag3_span: "",
+  parag3_class: " parag_show",
+  parag4:
+    "Tesisimiz son Teknolojilerle donatılmış yüksek performansa sahip üretim ve etiket ambalaj paketleme makineleri kullanılmaktadır. Aspar İlaç olarak, kendi marka ürünlerimizi üretmenin yanı sıra farklı ulusal ve uluslararası firmalarada üretim hizmeti vermekteyiz.",
+  parag4_span: " ",
+  parag4_class: "parag_hide",
+
+
+
+
+
+  table1_class: "table_hide",
+  table1_headertext: "Aspar İlaç Üretim Tesisimiz",
+  table1_items: [
+    {
+      icons: <ImLab />,
+      title: "LABORATUVAR",
+      text: "AR-GE ve Formülasyon çalışmaları kapsamında Aspar İlaç Laboratuvarımız hizmetinizdedir.",
+    },
+    {
+      icons: <GiMedicines />,
+      title: "MAKİNALAR",
+      text: "İlaç ve Kozmetik üretimi için gerekli olan en son teknolojide tüm makinalarımız envanterimizde yer almaktadır",
+    },
+    {
+      icons: <BsJournalMedical />,
+
+      title: "KALİTE KONTROL",
+      text: "Üretim bantlarından çıkan tüm ürünleri Uzman Kimyagerler tarafından dikkatli ve titiz şekilde kalite kontrolu yapılmaktadır",
+    },
+    {
+      icons: <FaWarehouse />,
+
+      title: "AKILLI DEPO",
+      text: "Üretimi sonlanan siparişleri teslim etmek üzere, kolileri barkodlanmış şekilde ister uzun vadede veya hemen teslim için 2 farklı depolama alanlarında saklarız",
+    },
+    {
+      icons: <GiTestTubes />,
+
+      title: "TEST CİHAZLARI",
+      text: "AR-GE çalışması zamanı üzerinde çalışılan formüller çeşitli Laboratuvar test cihazları ile test edilmektedir",
+    },
+    {
+      icons: <FaHandHoldingWater />,
+
+      title: "SU ARITMA SİSTEMİ",
+      text: "Üretimde kullanmak üzere, kendi bünyemizde kurulu olan Su Arıtma cihazlarımızlı kullanarak suyun en saf halini kullanmaktayız",
+    },
+    {
+      icons: <FcAdvertising />,
+
+      title: "REKLAM & TASARIM",
+      text: "Ulusal ve uluslararası firmalar için üretimini yaptığımız marka ve ürünlere, istek doğrultusunda Reklam & Tasarım çalışmalarını yapmaktayız",
+    },
+    {
+      icons: <BsFillCameraVideoFill />,
+
+      title: "AKILLI BİNA KORUMA SİSTEMİ",
+      text: "Beylikdüzü Beysan özel sanayi sitesi içerisinde kurulmuş olan Aspar İlaç hem site güvenliği ve tesisimizin özel güvenliği tarafından vede akıllı güvenlik sistemi tarafından korunmaktadır ",
+    },
+    {
+      icons: <BsSaveFill />,
+
+      title: "AKILLI İÇERİK KAYIT SİSTEMİ",
+      text: "Tarafımızca yapılmış olan AR-GE ve formülasyon çalışmalarını, kendi bünyemizde kurulu olan siber güvenliği sağlanmış özel serverler kullanılmaktadır",
+    },
+  ],
+
+  shortmenu_class: "short_menu",
+  shortmenuheader: "Teknoloji Başlangıç Sayfa İçeriği",
+  shortmenulinksitems: [
+    {
+      shortmenuitem: "Kapsül Dolum Makinası",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Granül ve Toz Karıştırıcı",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Yarı Otomatik Shrink Paketleme Makinası",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Granül Paketleme Makinası",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Çok Zımbalı Tablet Pres Makinası",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Kapsül Parlatma Makinası",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Kapsül Sayma Makinası",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Krem ve Sıvı Karıştırma Kazanı",
+      shortmenulink: "#",
+    },
+  ],
+
+  //alertyellow
+  alertyellow: "alert_none",
+  alertyellowheader: "Duyuru",
+  alertyellowcontents: [
+    {
+      alert_item:
+        "Bu sayfa başlıca kategoriler hakkında kısa bilgiler içermektedir. Daha fazla bilgi edinmek için sol taraftaki ana menüden detaylı bilgilere ulaşabilirsiniz.",
+    },
+  ],
+
+  // description
+  contents: [
+    {
+      contentheadertext: "Kapsül Dolum Makinası",
+      contentheaderlink: "#",
+      contentdescrip:
+        "Gıda takviyesi, ilaç, prebiotik, hayvansal ilaçlar, ekstraktlar vb. kapsül çeşitlerinin üretimini yapabiliriz. Tek personel ile saatte 60 000 kapsül üretim kapasitesine ulaşabiliriz. Otomatik kapsül dolum makinası, dolum bölümündeki hız ayarları sayesinde, hassas dozajlama yapabiliriz. Birçok kapsül boyutunda ve farklı gramaj ayarlarında çalışabiliriz. (000, 00, 0, 1, 2, 3, 4, 5)",
+    },
+    {
+      contentheadertext: "Granül ve Toz Karıştırıcı",
+      contentheaderlink: "#",
+      contentdescrip: "Ribon tipi karıştırıcı ile toz-toz, toz-granül, granül-granül ve rutubetlendirme karışımlar yapılabilmekteyiz. Ribon tipi granül ve toz karıştırıcı üç yönlü helezon sistemine sahiptir. Bu sistem sayesinde aynı anda karışımı yapılan ürünü 3 yöne birden çekerek tam homojen karışımlar yapabiliyoruz. Karışımın tamamlanması için geçen süre benzer karıştırıcılara göre çok daha kısa sürer. Bu sayede üretim performansı artar. Makinanın kapasitesi 500 litredir. ",
+    },
+    {
+      contentheadertext: "Yarı Otomatik Shrink Paketleme Makinası",
+      contentheaderlink: "#",
+      contentdescrip: "Ürünlerinizi shirinklenmiş olarak paketleyebiliriz kapsül parlatma. Uzun mesafeli gönderimlere uygun olarak paketleme yapabiliriz.",
+    },
+    {
+      contentheadertext: "Granül Paketleme Makinası",
+      contentheaderlink: "#",
+      contentdescrip: "-	1g-200g arası hassas toz ve sıvı dolum yapabiliyoruz. Dakikada 40 adet basabiliyoruz. Makine paslanmaz kromdan oluştuğu için dolumlar son derece hijyenik ortamda dolum ve paketleme yapılmaktadır. Ayarlanabilir yapıştırma çeneleri sayesinde, ince ve kalın birçok ambalaj çeşidinde sorunsuzca çalışabiliriz.",
+    },
+    {
+      contentheadertext: "Çok Zımbalı Tablet Pres Makinası",
+      contentheaderlink: "#",
+      contentdescrip: "Hijyenik üretim ortamına uygun olarak tasarlanan bu makina, başta gıda olmak üzere birçok ürün çeşidinde kullanmaktayız. Gezer kafa tablet pres makinası çok zımbalı, GMP şartlarına uyum sağlayan bir üretim ortamı oluştururuz. Makinanın tüm yüzeyleri paslanmaz materyalden üretilmiştir bundan dolayı hijyenik bir üretim sağlamaktayız. 18mm-13mm tablet aralığında 151200adet/saat üretim yapmaktayız. Kalıplarını değiştirerek farklı şekil ve gramajlarda müşteri isteğine göre tablet basabilmekteyiz.",
+    },
+    {
+      contentheadertext: "Kapsül Parlatma Makinası",
+      contentheaderlink: "#",
+      contentdescrip: "Üretimden çıkan kapsüller parlatılır ve blistere girer. 5000 adet/dakika kapsül parlatmaktayız.",
+    },
+    {
+      contentheadertext: "Kapsül Sayma Makinası",
+      contentheaderlink: "#",
+      contentdescrip: "Ürününüz ambalaj şekli şişe ise kapsül ve tablet çok kısa sürede el değmeden sayılabilmektedir.",
+    },
+    {
+      contentheadertext: "Krem ve Sıvı Karıştırma Kazanı",
+      contentheaderlink: "#",
+      contentdescrip: "Sıvı karıştırma tank çeşitlerimiz(1 ton, 1.5 ton, 0,5 ton) tam homojen karışım yapma özelliğine sahiptir. Tanklarımız paslanmaz çelikten oluştuğu için ürünlerimiz çok hijyenik şekilde yapılmaktadır.",
+    },
+  ],
+
+  alert_classblue: "alert_table_blue",
+  alert_header: "Formulasyon",
+  alert_itemcontents: [
+    {
+      alert_item: "tablet",
+    },
+    {
+      alert_item: "surup",
+    },
+    {
+      alert_item: "toz",
+    },
+    {
+      alert_item: "krem",
+    },
+    {
+      alert_item: "losyon",
+    },
+  ],
+};
+export const Teklaboratuvar = {
+  headerimage: headerlaboratory,
+  headerimagealt: "asparilaclaboratuvar",
+  headertext: "Laboratuvar | Arge | Formülasyon",
+  headerbckcolor: "#000B17",
+  txtcolor: "white",
+  headeralttext: "ASPAR ILAÇ TEKNOLOJİ BÖLÜMÜ",
+  mobiletxtcolor: "white",
+  mobilebckcolor : "black",
+
+  parag1: "Bu sayfa, Aspar Ilac ",
+  parag1_span: "Laboratuvar | Ar-Ge | Formülasyon",
+  parag1_2: " ile ilgili gerekli bilgi ve kaynak içermektedir.",
+  parag2:
+    "Kozmetik, gıda takviyesi, ilaç ve diğer sektörler sürekli bir değişim içindedir; Yeni ürünler ve hammaddeler çıkmaktadır. Aspar ilaç olarak düşüncemiz; Ar-Ge bir firmaya ayakta tutan, firmayı ileri götüren ve büyüten önemli bir basamaktır. Aspar İlaç ailesine katıldığınızda Ar-Ge ekibimiz sizin istekleriniz doğrultusunda Avrupa standartlarına uygun, etkinlikleri test edilmiş, tahriş etmeyen ürünler oluşturur. Ürünlerimizde kullandığımız hammaddeler, izlenebilirlik kodlara olan, analiz sertifikalarına sahip ve menşei gelişmiş ülkeler olan firmalardan tedarik etmekteyiz. ",
+
+  secondparagbr: "br_show",
+  parag3:
+    "Aspar İlaç çatısı altındaki uzman ekip tarafından tren olan ürünler, müşterilerimizin istekleri doğrultusu tasarlanır, etkinlikleri ve stabiliteleri test edilerek üretime hazır hale getirilir. Formülleriniz gelişmiş laboratuvarlarımızda, yönetmeliklere ve Avrupa standartlarına uygun şekilde tasarların. ",
+  parag3_span: "",
+  parag3_class: " parag_show",
+  parag4:
+    "Formülleriniz gelişmiş laboratuvarlarımızda, yönetmeliklere ve Avrupa standartlarına uygun şekilde tasarlarız. Oluşturulan formüllerle numuneler yapar ve stabilite testlerini uygularız. Formül oluşturma işleminiz tamamlandıktan sonra sizin için başvuruda bulunuruz. Son olarak Ar-Ge ekibimize bilgileri aktarır, kısa zamanda üretimi gerçekleştiririz. Aynı zamanda   olan formülleriniz geliştirilir ve iyileştirilir.",
+  parag4_span: " ",
+  parag4_class: "parag_show",
+
+  table1_class: "table_hide",
+  table1_headertext: "Aspar İlaç Üretim Tesisimiz",
+  table1_items: [
+    {
+      icons: <ImLab />,
+      title: "LABORATUVAR",
+      text: "AR-GE ve Formülasyon çalışmaları kapsamında Aspar İlaç Laboratuvarımız hizmetinizdedir.",
+    },
+    {
+      icons: <GiMedicines />,
+      title: "MAKİNALAR",
+      text: "İlaç ve Kozmetik üretimi için gerekli olan en son teknolojide tüm makinalarımız envanterimizde yer almaktadır",
+    },
+    {
+      icons: <BsJournalMedical />,
+
+      title: "KALİTE KONTROL",
+      text: "Üretim bantlarından çıkan tüm ürünleri Uzman Kimyagerler tarafından dikkatli ve titiz şekilde kalite kontrolu yapılmaktadır",
+    },
+    {
+      icons: <FaWarehouse />,
+
+      title: "AKILLI DEPO",
+      text: "Üretimi sonlanan siparişleri teslim etmek üzere, kolileri barkodlanmış şekilde ister uzun vadede veya hemen teslim için 2 farklı depolama alanlarında saklarız",
+    },
+    {
+      icons: <GiTestTubes />,
+
+      title: "TEST CİHAZLARI",
+      text: "AR-GE çalışması zamanı üzerinde çalışılan formüller çeşitli Laboratuvar test cihazları ile test edilmektedir",
+    },
+    {
+      icons: <FaHandHoldingWater />,
+
+      title: "SU ARITMA SİSTEMİ",
+      text: "Üretimde kullanmak üzere, kendi bünyemizde kurulu olan Su Arıtma cihazlarımızlı kullanarak suyun en saf halini kullanmaktayız",
+    },
+    {
+      icons: <FcAdvertising />,
+
+      title: "REKLAM & TASARIM",
+      text: "Ulusal ve uluslararası firmalar için üretimini yaptığımız marka ve ürünlere, istek doğrultusunda Reklam & Tasarım çalışmalarını yapmaktayız",
+    },
+    {
+      icons: <BsFillCameraVideoFill />,
+
+      title: "AKILLI BİNA KORUMA SİSTEMİ",
+      text: "Beylikdüzü Beysan özel sanayi sitesi içerisinde kurulmuş olan Aspar İlaç hem site güvenliği ve tesisimizin özel güvenliği tarafından vede akıllı güvenlik sistemi tarafından korunmaktadır ",
+    },
+    {
+      icons: <BsSaveFill />,
+
+      title: "AKILLI İÇERİK KAYIT SİSTEMİ",
+      text: "Tarafımızca yapılmış olan AR-GE ve formülasyon çalışmalarını, kendi bünyemizde kurulu olan siber güvenliği sağlanmış özel serverler kullanılmaktadır",
+    },
+  ],
+
+  shortmenu_class: "short_menu",
+  shortmenuheader: "Teknoloji Başlangıç Sayfa İçeriği",
+  shortmenulinksitems: [
+    {
+      shortmenuitem: "Kalite Kontrol",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Tablet Sıkıştırılabilirliği (Friabilite) Test Cihazı",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Tablet ve kapsül çözünme testi",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Tablet Sertlik Cihazı",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Nem Tayin Cihazı",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Tozlarda ve sıvılarda yoğunluk tayini",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Tozlarda sıkılaştırılmış (Tapped) yoğunluk testi",
+      shortmenulink: "#",
+    },
+    {
+      shortmenuitem: "Disintegrasyon Cihazı",
+      shortmenulink: "#",
+    },
+  ],
+
+  //alertyellow
+  alertyellow: "alert_none",
+  alertyellowheader: "Duyuru",
+  alertyellowcontents: [
+    {
+      alert_item:
+        "Bu sayfa başlıca kategoriler hakkında kısa bilgiler içermektedir. Daha fazla bilgi edinmek için sol taraftaki ana menüden detaylı bilgilere ulaşabilirsiniz.",
+    },
+  ],
+
+  // description
+  contents: [
+    {
+      contentheadertext: "Kalite Kontrol",
+      contentheaderlink: "#",
+      contentdescrip:
+        "Üretim sonrası çıkan ürünlerin belli değerlerde olması gerekiyor. GMP standartlarına göre fabrikaya gelen hammaddelerin test edilip, izlenebilirlik numarası verilir ve çıkan son ürünlerde belli testlere tabii tutulmaktadır. Laboratuvarımızdaki cihazlarla nem tayini, toz ve sıvı yoğunluğu tespiti, tablet kırılganlığı tespiti, tablet ve kapsül çözünme testi, tablet aşınma testi ve sıkılaştırılmış toz yoğunluğuna bakılmaktadır.",
+    },
+    {
+      contentheadertext: "Tablet Sıkıştırılabilirliği (Friabilite) Test Cihazı",
+      contentheaderlink: "#",
+      contentdescrip: "Farmakopiye uygun olarak ayarlanmış test cihazıdır. Numune tablet basıldıktan sonra gevrekliği ve aşınma testi uygulanır eğer uygunsa üretime geçilir.",
+    },
+    {
+      contentheadertext: "Tablet ve kapsül çözünme testi",
+      contentheaderlink: "#",
+      contentdescrip: "Tablet ve kapsüllerin üretiminden sonra alınan numune, mide ortamını özelliklerini içeren cihazlarda çözünme süresini belirler.",
+    },
+    {
+      contentheadertext: "Tablet Sertlik Cihazı",
+      contentheaderlink: "#",
+      contentdescrip: "Tabletler çok sert olmasını durumunda çözünmesi zorlaşabilir.",
+    },
+    {
+      contentheadertext: "Nem Tayin Cihazı",
+      contentheaderlink: "#",
+      contentdescrip: "Üretimden çıkan üründe nem tayini yapılır nem çok yüksek olmaması lazım.",
+    },
+    {
+      contentheadertext: "Tozlarda ve sıvılarda yoğunluk tayini",
+      contentheaderlink: "#",
+      contentdescrip: "Sıvılarda yoğunluk piknometre, dansimetre kullanılmaktadır. Tozlarda hata payı çok az mezürler kullanılmaktadır.",
+    },
+    {
+      contentheadertext: "Tozlarda sıkılaştırılmış (Tapped) yoğunluk testi",
+      contentheaderlink: "#",
+      contentdescrip: "Tozların arasındaki mikro düzeydeki boşluklar olmadan yoğunluğu ölçen cihazdır.",
+    },
+    {
+      contentheadertext: "Disintegrasyon Cihazı",
+      contentheaderlink: "#",
+      contentdescrip: "Tablet, kapsül ve diğer katı dozaj formlarının parçalanma sürelerinin manuel olarak test edilmesi içinkullanmaktayız.",
     },
   ],
 

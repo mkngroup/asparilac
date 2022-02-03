@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Headerimg from "../../assets/Headerimg.png";
 import logo2 from "../../assets/logo2.png";
+import galaxy from "../../assets/galaxy.jpg";
+
 import {
   Container,
   HeaderText,
@@ -11,24 +13,38 @@ import {
   BtnContainer,
   Btn1,
   Btn2,
+  Button1,
+  MobileImg,
 } from "./headercontent_sc";
 
 const HeaderContent = () => {
   return (
     <Container>
+      <MobileImg>
+        <img src={galaxy} alt="asparilac" />
+      </MobileImg>
       <HeaderText>
         <ImgLogo2 src={logo2} alt="aspar-ilac.icon" />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-          explicabo quod itaque quisquam laborum voluptatibus, deleniti, cumque
-          corrupti dolorum in eius quam tempora qui suscipit magni rem ut
-          repellendus eligendi.
+          10 yılı aşkın tecrübe ve deneyimi ile Aspar İlaç değişen ve gelişen
+          ihtiyaçlara cevap verebilmek amacıyla en yüksek teknolojide Ar-Ge
+          Merkezi Formülasyon ve Metot Geliştirme yöntemleriyle analitik
+          geliştirme yeteneği ve altyapısına sahiptir.
         </p>
         <BtnContainer>
-          {/* <Link to="/production"><Btn1>Uretim</Btn1></Link>
-          <Link to="/contact"><Btn2>Iletisim</Btn2></Link> */}
-          <Btn1>Uretim</Btn1>
-          <Btn2>Iletisim</Btn2>
+          <Link className="btnnew" to="/production/">
+            ÜRETIM BÖLÜMÜ KEŞFET
+          </Link>
+          <Link
+            className="btnnew"
+            to="/contact/"
+            style={{
+              backgroundColor: "transparent",
+              border: "0.5px solid grey",
+            }}
+          >
+            HEMEN İLETİŞİM KUR
+          </Link>
         </BtnContainer>
       </HeaderText>
       <HeaderImage>

@@ -104,6 +104,9 @@ export const Baslangic = {
   headerimagealt: "Aspar İlaç Üretım",
   headertext: "Hadi Başlayalım",
   headerbckcolor: "#7FD5E5",
+  mobilebckcolor : "black",
+  txtcolor: "black",
+  mobiletxtcolor: "white",
   headeralttext: "ASPAR ILAC URETIM BOLUMU",
 
   parag1: "Bu sayfa, Aspar Ilaç ",
