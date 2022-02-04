@@ -37,11 +37,16 @@ export const Container = styled.div`
       top: 10px;
       display: flex;
       width: 100%;
+      
       justify-content: center;
+      /* background-color: green; */
 
       img{
         width: 30%;
         height: auto;
+        max-height: 30%;
+        opacity: 0.3;
+        
       }
     }
     .text_container {
