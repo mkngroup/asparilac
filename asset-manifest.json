@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.22bb1d69.chunk.css",
-    "main.js": "/static/js/main.fcba6215.chunk.js",
-    "main.js.map": "/static/js/main.fcba6215.chunk.js.map",
+    "main.js": "/static/js/main.c4084de0.chunk.js",
+    "main.js.map": "/static/js/main.c4084de0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cb4b6558.js",
     "runtime-main.js.map": "/static/js/runtime-main.cb4b6558.js.map",
     "static/js/2.67565586.chunk.js": "/static/js/2.67565586.chunk.js",
@@ -27,6 +27,7 @@
     "static/media/imagevitaminc.b6f48fec.jpg": "/static/media/imagevitaminc.b6f48fec.jpg",
     "static/media/logo2.8affc359.png": "/static/media/logo2.8affc359.png",
     "static/media/logogidatakviyesi.4fa208f6.jpg": "/static/media/logogidatakviyesi.4fa208f6.jpg",
+    "static/media/logoicon.0d9c847e.png": "/static/media/logoicon.0d9c847e.png",
     "static/media/logolaboratuvar.52313839.jpg": "/static/media/logolaboratuvar.52313839.jpg",
     "static/media/machinelogo.bb2d7012.jpg": "/static/media/machinelogo.bb2d7012.jpg",
     "static/media/skincareantiaging.21f36e1d.jpg": "/static/media/skincareantiaging.21f36e1d.jpg",
@@ -36,6 +37,6 @@
     "static/js/runtime-main.cb4b6558.js",
     "static/js/2.67565586.chunk.js",
     "static/css/main.22bb1d69.chunk.css",
-    "static/js/main.fcba6215.chunk.js"
+    "static/js/main.c4084de0.chunk.js"
   ]
 }
