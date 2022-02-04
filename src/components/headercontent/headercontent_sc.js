@@ -11,24 +11,95 @@ export const Container = styled.div`
   @media screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
-    
   }
 
-  
+  .desktop {
+    @media screen and (max-width: 501px) {
+      display: none;
+    }
+  }
+
+  .mobile {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    
+    @media screen and (min-width: 501px) {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .logo_container {
+      position: absolute;
+      top: 10px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      img{
+        width: 30%;
+        height: auto;
+      }
+    }
+    .text_container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 145px;
+
+      p {
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .button_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* background-color: grey; */
+      position: absolute;
+      width: 100%;
+      bottom: 35px;
+
+      .button1 {
+        background-color: green;
+        width: 95%;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        
+        line-height: 2;
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background-color: #185adb;
+        border: none;
+        border-radius: 7px;
+        font-size: 15.5px;
+        -webkit-box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.46);
+        box-shadow: 3px 7px 15px -5px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
 `;
 
-export const MobileImg = styled.div` 
-position : absolute ;
-display: none;
+export const MobileImg = styled.div`
+  position: absolute;
+  display: none;
 
-@media screen and (max-width : 500px){
-  display: block;
-}
+  @media screen and (max-width: 500px) {
+    display: block;
+    height: 100%;
+  }
 
-img{
-  width: 100%;
-}
-
+  img {
+    width: 100%;
+  }
 `;
 export const HeaderText = styled.div`
   position: relative;
@@ -48,7 +119,7 @@ export const HeaderText = styled.div`
       font-size: 15.5px;
       font-weight: 500;
 
-      @media screen and (max-width: 500px){
+      @media screen and (max-width: 500px) {
         color: white;
       }
     }
@@ -60,7 +131,6 @@ export const HeaderImage = styled.div`
 
   @media screen and (max-width: 500px) {
     display: none;
-    
   }
 `;
 export const ImgLogo2 = styled.img`
@@ -110,20 +180,19 @@ export const BtnContainer = styled.div`
     display: flex;
     justify-content: center;
     text-decoration: none;
-    
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       margin: 5px 0;
     }
-    @media screen and (min-width: 501px){
+    @media screen and (min-width: 501px) {
       height: 35px;
     }
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: 900px) {
       height: 45px;
     }
   }
 
-  .header_link{
+  .header_link {
     color: white;
     text-decoration: none;
   }
