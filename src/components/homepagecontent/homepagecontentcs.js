@@ -222,7 +222,7 @@ export const CardText = styled.div`
 
     max-height: 390px;
     overflow: auto;
-    font-size: 25px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 900px) {

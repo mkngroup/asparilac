@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-columns: 40% 60%;
   width: 100%;
   height: auto;
-  background-color: #7fcbe5;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 900px) {
@@ -14,6 +11,83 @@ export const Container = styled.div`
   }
 
   .desktop {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: row-reverse;
+
+    img {
+      width: auto;
+      height: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .text_container {
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 50px;
+      margin-left: 50px;
+      text-align: center;
+      margin-top: 50px;
+
+
+
+
+      p {
+        margin-top: 35px;
+        padding: 0 50px 0 50px;
+        font-weight: 500;
+      }
+
+      h1{
+        color: #1C39A1;
+      }
+      .dskbtncontainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        /* background-color: aquamarine; */
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .dskbtnwrapper{
+        /* background-color: red; */
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+      }
+      .dskbtn{
+        /* background-color: green; */
+        width: 95%;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+
+        line-height: 2;
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        background-color: #185adb;
+        border: none;
+        border-radius: 7px;
+        font-size: 15.5px;
+        -webkit-box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.46);
+        box-shadow: 3px 7px 15px -5px rgba(0, 0, 0, 0.5);
+      }
+    }
+
     @media screen and (max-width: 501px) {
       display: none;
     }
@@ -23,7 +97,7 @@ export const Container = styled.div`
     position: relative;
     width: 100%;
     height: 450px;
-    
+
     @media screen and (min-width: 501px) {
       display: none;
     }
@@ -37,16 +111,15 @@ export const Container = styled.div`
       top: 10px;
       display: flex;
       width: 100%;
-      
+
       justify-content: center;
       /* background-color: green; */
 
-      img{
+      img {
         width: 30%;
         height: auto;
         max-height: 30%;
         opacity: 0.3;
-        
       }
     }
     .text_container {
@@ -76,7 +149,7 @@ export const Container = styled.div`
         align-items: center;
         text-align: center;
         margin: 5px;
-        
+
         line-height: 2;
         font-size: 17px;
         text-decoration: none;

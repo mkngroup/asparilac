@@ -8,12 +8,12 @@ const Fasonuretimpage = () => {
   return (
     <>
       <PageContainer>
-        <div className="fason_sidebar">
+        {/* <div className="fason_sidebar"> */}
           <PageSidebar
             tabdata={TabData}
             sidebarheader={SidebarHeader.production}
           />
-        </div>
+        {/* </div> */}
         <div className="fason_mobilesidebar">
           <Mobilepagesidebar tabdata={TabData} sidebarheader={SidebarHeader.production} />
         </div>
@@ -450,7 +450,7 @@ const ContentWrapper = styled.div`
   background-color: white;
   border-radius: 3px;
   overflow: auto;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 `;
 
 const HeaderContainer = styled.div`

@@ -4,6 +4,7 @@ import Headerimg from "../../assets/Headerimg.png";
 import logo2 from "../../assets/logo2.png";
 import galaxy from "../../assets/galaxy.jpg";
 import logoicon from "../../assets/logoicon.png";
+import asa from "../../assets/asa.jpg";
 
 import {
   Container,
@@ -51,36 +52,26 @@ const HeaderContent = () => {
         </div>
       </div>
       <div className="desktop">
-        <MobileImg>
-          <img src={galaxy} alt="asparilac" />
-        </MobileImg>
-        <HeaderText>
-          <ImgLogo2 src={logo2} alt="aspar-ilac.icon" />
+        <img src={asa} alt="asparilac" />
+        <div className="text_container">
+          <h1>ASPAR İLAÇ KOZMETİK GIDA SANAYİ A.Ş</h1>
           <p>
             10 yılı aşkın tecrübe ve deneyimi ile Aspar İlaç değişen ve gelişen
             ihtiyaçlara cevap verebilmek amacıyla en yüksek teknolojide Ar-Ge
             Merkezi Formülasyon ve Metot Geliştirme yöntemleriyle analitik
             geliştirme yeteneği ve altyapısına sahiptir.
           </p>
-          <BtnContainer>
-            <Link className="btnnew" to="/production/">
-              ÜRETIM BÖLÜMÜ KEŞFET
-            </Link>
-            <Link
-              className="btnnew"
-              to="/contact/"
-              style={{
-                backgroundColor: "transparent",
-                border: "0.5px solid grey",
-              }}
-            >
-              HEMEN İLETİŞİM KUR
-            </Link>
-          </BtnContainer>
-        </HeaderText>
-        <HeaderImage>
-          <Himg src={Headerimg} alt="aspar-ilac.headerimage" />
-        </HeaderImage>
+          <div className="dskbtncontainer">
+            <div className="dskbtnwrapper">
+              <Link to="/production" className="dskbtn">
+                ÜRETİM BÖLÜMÜ
+              </Link>
+              <Link to="/technology" className="dskbtn" style={{backgroundColor: "transparent", color: "black"}}>
+                TEKNOLOJİ BÖLÜMÜ
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </Container>
   );

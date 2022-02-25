@@ -8,12 +8,17 @@ import {
 } from "../../components";
 import { Main } from "./homepagecs.js";
 import { Cartdata } from "../../data/CardDt";
+import {Helmet} from "react-helmet"
 
 const Homepage = () => {
   
 
   return (
     <>
+    <Helmet>
+      <title>Aspar İlaç</title>
+      <meta name="description" content="Aspar İlaç - Ar-Ge Merkezi Formülasyon ve Metot Geliştirme yöntemleriyle analitik geliştirme yeteneği ve altyapısına sahiptir"/>
+    </Helmet>
       <Navbar />
       <HeaderContent />
       <Secondnav />
