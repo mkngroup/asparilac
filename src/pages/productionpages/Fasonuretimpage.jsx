@@ -8,12 +8,12 @@ const Fasonuretimpage = () => {
   return (
     <>
       <PageContainer>
-        {/* <div className="fason_sidebar"> */}
+        <div className="fason_sidebar">
           <PageSidebar
             tabdata={TabData}
             sidebarheader={SidebarHeader.production}
           />
-        {/* </div> */}
+        </div>
         <div className="fason_mobilesidebar">
           <Mobilepagesidebar tabdata={TabData} sidebarheader={SidebarHeader.production} />
         </div>
@@ -423,9 +423,11 @@ const PageContainer = styled.div`
   position: relative;
   height: 100vh;
   
+  
 
   .fason_sidebar{
     display: block;
+    
     
     
 
