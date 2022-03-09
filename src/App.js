@@ -24,7 +24,7 @@ import {
   Technology,
 } from "../src/pages";
 
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 class App extends Component {
@@ -33,7 +33,7 @@ class App extends Component {
       <Router>
         <ScrollToTop>
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            <Route exact path="/" element={<Homepage />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />

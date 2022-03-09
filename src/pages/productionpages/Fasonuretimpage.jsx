@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Pagecontentintro, PageSidebar } from "../../components";
+import { Pagecontentintro, PageSidebar, Pageupicon } from "../../components";
 import { Mobilepagesidebar } from "../../components/pagesidebar/PageSidebar";
 import { SidebarHeader, TabData } from "../../data/pagestabcontent";
 

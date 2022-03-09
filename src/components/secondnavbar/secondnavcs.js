@@ -24,8 +24,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   background-color: white;
-
-
 `;
 export const NavItem = styled.li`
   display: grid;
@@ -39,8 +37,8 @@ export const NavItem = styled.li`
     display: none;
   }
 `;
-
-export const MobileNavItem = styled.div`
+export const MobileLinkS = styled(LinkS)``;
+export const MobileNavItem = styled.li`
   display: none;
 
   p {
@@ -57,7 +55,7 @@ export const MobileNavItem = styled.div`
     text-transform: uppercase;
   }
 
-  .nav-line{
+  .nav-line {
     color: #ffa500;
   }
 
@@ -66,6 +64,7 @@ export const MobileNavItem = styled.div`
     align-items: center;
     height: 40px;
     overflow: auto;
+    position: relative ;
   }
 `;
 

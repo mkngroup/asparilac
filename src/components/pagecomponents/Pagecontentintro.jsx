@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import styled from "styled-components";
 
 import { Container } from "./pagecontentintrocs";
@@ -35,9 +36,15 @@ const Pagecontentintro = (props) => {
 
         {props.shortchil.map((data, key) => {
           return (
-            <Link to={data.shortmenulink} className="sm_link">
+            // <LinkS to={data.shortmenulink} smooth={true} className="sm_link">
+            //   <li className="short_menu_links">{data.shortmenuitem}</li>
+            // </LinkS>
+
+            <a href={data.shortmenulink}  className="sm_link">
               <li className="short_menu_links">{data.shortmenuitem}</li>
-            </Link>
+            </a>
+          
+            
           );
         })}
       </ul>

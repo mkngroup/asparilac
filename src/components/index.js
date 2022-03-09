@@ -15,6 +15,9 @@ export { default as Pagealerts} from './pagecomponents/Pagealerts'
 export { default as Fasonuretim} from './pagecomponents/Fasonuretim'
 
 
+export {default as Pageupicon} from './Pageupicon'
+
+
 
 
 

@@ -1,8 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { PageContent } from "../../components";
+import { PageContent, Pageupicon } from "../../components";
 import { Baslangic, Yuzbakimiintro } from "../../data/pagescontents";
 import { TabData , SidebarHeader} from "../../data/pagestabcontent";
+
 
 const Production = () => {
   return (
@@ -20,3 +21,5 @@ const Production = () => {
   );
 };
 export default Production;
+
+

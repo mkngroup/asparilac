@@ -134,19 +134,19 @@ export const Baslangic = {
   shortmenulinksitems: [
     {
       shortmenuitem: "Kozmetik & Dermokozmetik",
-      shortmenulink: "#",
-      shortmenuscroll: "kozmetikdermokozmetik",
+      shortmenulink: "#kozmetik-dermokozmetik",
+      // shortmenuscroll: "kozmetikdermokozmetik",
     },
     {
       shortmenuitem: "Gıda Takviyesi",
-      shortmenulink: "#",
-      shortmenuscroll: "gidatakviyesi",
+      shortmenulink: "#gida-takviyesi",
+      // shortmenuscroll: "gidatakviyesi",
     },
 
     {
       shortmenuitem: "Fason Üretimi",
       shortmenulink: "#",
-      shortmenuscroll: "kozmetikdermokozmetik",
+      // shortmenuscroll: "kozmetikdermokozmetik",
     },
   ],
 
@@ -164,14 +164,14 @@ export const Baslangic = {
   contents: [
     {
       contentheadertext: "Kozmetik & Dermokozmetik",
-      contentid: "kozmetikdermokozmetik",
+      contentid: "kozmetik-dermokozmetik",
       contentheaderlink: "#",
       contentdescrip:
         "Dermokozmetik, cilt, saç ve vücut bakımı için kullanılan, ilaç teknikleri kullanılarak geliştirilmiş, üretilmiş ve dermatolojik klinik testlerden geçirilmiş cilt ürünleridir. Dermokozmetik kelimesi, dermatoloji tıp dalı ile kozmetik kelimelerinin birleşiminden oluşan bir terimdir.  Genel anlamı ile belirli cilt problemlerinin düzeltilmesinde, cildin korunmasında, cilt konforunun sağlanmasında, yaşlılık belirtileri gibi sorunların önlenmesinde ya da hafifletilmesinde kullanılan ürünleri ifade eder. Aynı zamanda saç ve vücut için kullanılan dermokozmetik ürünler de vardır. Avrupa ülkelerinde Dermokozmetik ( Dermocosmetic) terimi kullanılırken, Amerika ülkelerinde ise farmasötik yani ilaç kelimesi ile kozmetik kelimelerinin birleşiminden yola çıkarak kozmosötik (Cosmoceutics  ve ya Cosmoceutical) terimi tercih edilir.  Dermokozmetik ürünler, Krem, losyon tonik, Cilt serumu, Temizleme jeli, köpük, Şampuan , Jel , katı pudra, Maske şeklinde olabilir. Bunun yanı sıra yağ karışımları da sık sık kullanılan ürünler arasındadır.",
     },
     {
       contentheadertext: "Gıda Takviyesi",
-      contentid: "gidatakviyesi",
+      contentid: "gida-takviyesi",
       contentheaderlink: "#",
       contentdescrip:
         "Diyet veya beslenme takviyeleri ismi de verilen gıda takviyelerinin ardında yatan fikir, yeterli miktarlarda tüketilmeyen besinlerin tedarik edilmesidir. Gıda takviyeleri, hap, tablet, kapsül, sıvı, vb. formunda sağlanan vitaminler, mineraller, aminoasitler, yağ asitleri ve diğer maddeler olabilir. Besin desteği (suplemantasyon), bireye yönelik bir uygulamadır. Besin destekleri, vitamin, mineral, posa, aminoasitler, fitokimyasallar, otlar (herbal) ve botanik ürünleri kapsar. Supleman olarak sunulan besin öğelerinin çoğu, günlük diyette doğal olarak bulunmaktadır.",

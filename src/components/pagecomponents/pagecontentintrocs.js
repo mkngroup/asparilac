@@ -71,6 +71,8 @@ export const Container = styled.div`
     .sm_link{
       text-decoration: none;
       color: black;
+      cursor: pointer;
+      scroll-behavior: smooth;
     }
   }
 `;

@@ -5,6 +5,7 @@ import {
   Secondnav,
   Footer,
   HomepageCard,
+  Pageupicon,
 } from "../../components";
 import { Main } from "./homepagecs.js";
 import { Cartdata } from "../../data/CardDt";
@@ -38,6 +39,7 @@ const Homepage = () => {
           />
         ))}
       </Main>
+      {/* <Pageupicon/> */}
       <Footer />
     </>
   );

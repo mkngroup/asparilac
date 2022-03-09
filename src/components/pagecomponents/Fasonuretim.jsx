@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLink } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Pageupicon } from "..";
 
 import { Container } from "./fasonuretimcs";
 

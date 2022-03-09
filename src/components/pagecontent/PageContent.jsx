@@ -15,15 +15,10 @@ import {
   Fasonuretim,
 } from "../../components";
 
-import {
-  Yuzbakimiheader,
-  Yuzbakimiintro,
-  Alertformulasyon_blue,
-} from "../../data/pagescontents";
-
 import { TabData } from "../../data/pagestabcontent";
 import { Mobilepagesidebar } from "../pagesidebar/PageSidebar";
 import { MobileHeaderSec } from "../pagecomponents/PageHeaderSec";
+import Pageupicon from "../Pageupicon";
 
 const PageContent = (props) => {
   const data = props.contentDataName;
@@ -34,6 +29,7 @@ const PageContent = (props) => {
       <PageContainer>
         <PageSidebar tabdata={tabdata} sidebarheader={sidebarheader} />
         <ContentWrapper>
+          <Pageupicon/>
           <PageHeaderSec
             headerimg={data.headerimage}
             headertext={data.headertext}
@@ -89,7 +85,7 @@ const PageContent = (props) => {
             headeralttext={data.headeralttext}
           />
           <div className="main_contents">
-          <Pagecontentintro
+            <Pagecontentintro
               parag1={data.parag1}
               parag1_span={data.parag1_span}
               parag1_2={data.parag1_2}

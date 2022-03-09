@@ -1,0 +1,405 @@
+import React from "react";
+import styled from "styled-components";
+import bina from "../../assets/bina.png";
+import { Navbar } from "../../components";
+import sertifikahalal from "../../assets/sertifikahalal.jpg";
+import sertifika9001 from "../../assets/sertifika9001.jpg";
+import sertifika22000 from "../../assets/sertifika22000.jpg";
+import sertifika22716 from "../../assets/sertifika22716.jpg";
+import sertifikatr34 from "../../assets/sertifikatr34.jpg";
+import world from "../../assets/world.jpg";
+
+const About = () => {
+  return (
+    <>
+      <Navbar />
+      <Header />
+      <Content />
+      <Content2 />
+    </>
+  );
+};
+export default About;
+
+const Content2 = () => {
+  return (
+    <>
+      <Content2Container>
+        <div className="content_wrapper">
+          <p className="p_1">Çalıştığımız Ülkeler</p>
+          <div className="container">
+            <ul className="menu_items">
+              <li className="item">AZERBAYCAN</li>
+              <li className="item">GÜRCİSTAN</li>
+              <li className="item">RUSYA</li>
+              <li className="item">UKRAYNA</li>
+              <li className="item">ÖZBEKİSTAN</li>
+              <li className="item">KAZAKİSTAN</li>
+              <li className="item">ROMANYA</li>
+              <li className="item">POLONYA</li>
+              <li className="item">ÇEKYA</li>
+              <li className="item">MACARİSTAN</li>
+              <li className="item">SIRBİSTAN</li>
+              <li className="item">MONTENEGRO</li>
+              <li className="item">LITVANYA</li>
+            </ul>
+          </div>
+        </div>
+        <img className="container_img" src={world} alt="" />
+      </Content2Container>
+    </>
+  );
+};
+
+export const Content2Container = styled.div`
+position: relative ;
+  @media screen and (max-width: 1000px) {
+  }
+  img {
+    height: 500px ;
+    object-fit: fill ;
+    /* overflow: hidden ; */
+  }
+
+  .content_wrapper{
+      position: absolute ;
+  }
+  .p_1{
+      color: white ;
+  }
+  .container{
+      color: white;
+  }
+`;
+
+const Content = () => {
+  return (
+    <>
+      <ContentContainer>
+        <div className="intro">
+          <p className="p_1">Izin Belgelerimiz</p>
+          <p className="p_2">
+            Sağlık Otoriteleri tarafından onaylanmış olan tesisimiz,
+          </p>
+          <ul className="intro_menu">
+            <li className="menu_items">Halal Sertifikası</li>
+            <li className="menu_items">Kalite Yönetim Sistemi İSO 9001</li>
+            <li className="menu_items">
+              Gıda Güvenliği Yönetim Sistemi ISO 22000
+            </li>
+            <li className="menu_items">GMP İSO 22716</li>
+            <li className="menu_items">TR34 sertifikalarına sahiptir</li>
+          </ul>
+          <div className="intro_images">
+            <img src={sertifikahalal} className="intro_image" alt="" />
+            <img src={sertifika9001} className="intro_image" alt="" />
+            <img src={sertifika22000} className="intro_image" alt="" />
+            <img src={sertifika22716} className="intro_image" alt="" />
+            <img src={sertifikatr34} className="intro_image" alt="" />
+          </div>
+        </div>
+      </ContentContainer>
+    </>
+  );
+};
+
+export const ContentContainer = styled.div`
+  padding: 40px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 15px;
+  }
+
+  .p_1 {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: #1c39a1;
+  }
+  .p_2 {
+    font-size: 17px;
+    font-weight: 350;
+    margin: 5px 0 5px 0;
+  }
+  .intro_menu {
+    margin-left: 50px;
+  }
+
+  .intro_images {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    margin-top: 25px;
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 50% 50%;
+    }
+
+    .intro_image {
+      width: 100%;
+    }
+  }
+`;
+
+const Header = () => {
+  return (
+    <>
+      <HeaderContainer>
+        <div className="img_container">
+          <img src={bina} alt="asparilachakkimizda" />
+        </div>
+        <div className="text_container">
+          <div className="brand_name">
+            <p className="p_1">Aspar İlaç</p>
+            <p className="p_2">Kozmetik Gıda Sanayi A.Ş</p>
+          </div>
+          <div className="text">
+            <p className="p_3">
+              İstanbul Beylikdüzünde 5600 m2 alana kurulmuş olan ve yüksek
+              teknolojiyle donatılmış kompleksimizde tüm süreçler elektronik
+              sistemlerle takip edilmektedir.
+              <br />
+              <br />
+            </p>
+            <p className="p_4">
+              Aspar İlaç 10 yılı aşkın bir süredir ulusal ve uluslararası
+              pazarda doktor ve eczanelerin güven ve beğenisini kazanmıştır.
+              Kazanmakla beraber başlayan bu serüven yıllar itibariyle üretim ve
+              değişen sağlık sektörüyle beraber kalite teknolojisindeki
+              gelişmeleri takip ederek bugünkü modern şekline ulaşmıştır.
+              <br />
+              <br />
+            </p>
+            <p className="p_5">
+              2021 yılından itibaren İstanbul Beysan Sanayi sitesinde yeni
+              tesisimizde ilaç, kozmetik ve gıda takviye alanlarındaki satış ve
+              pazarlama organizasyonu Aspar İlaç Kozmetik kurularak yeniden
+              oluşturulmuştur. Aspar İlaç Dünya genelinde 10,000’den fazla
+              eczaneye genç ve yenilikçi satış kadroları ile hizmet sunmaktadır.
+              Güçlü vizyonu, dinamik yapısı ve yenilikçi bakış açısı ile Aspar
+              İlaç Türkiye’nin önde gelen firmalarındandır.
+            </p>
+          </div>
+        </div>
+      </HeaderContainer>
+    </>
+  );
+};
+export const HeaderContainer = styled.div`
+  position: relative;
+  display: flex;
+  background-color: #c1c4cf;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  .img_container {
+    img {
+      height: 100%;
+    }
+    @media screen and (max-width: 1000px) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .text_container {
+    padding: 40px;
+    @media screen and (max-width: 1000px) {
+      padding: 15px;
+    }
+
+    .brand_name {
+      margin-bottom: 10px;
+
+      .p_1 {
+        font-size: 30px;
+        font-weight: 700;
+        color: #1c39a1;
+      }
+      .p_2 {
+        font-size: 27px;
+        font-weight: 300;
+      }
+    }
+
+    .text {
+      .p_3 {
+        font-size: 17px;
+        font-weight: 500;
+        font-style: italic;
+      }
+      .p_4 {
+        font-size: 17px;
+        font-weight: 400;
+      }
+      .p_5 {
+        font-size: 17px;
+        font-weight: 400;
+      }
+    }
+  }
+`;
+
+{
+  /* <Navbar />
+      <Container>
+        <Header>
+          <div className="image_containern">
+            <img src={bina} alt="" />
+          </div>
+          <div className="text_content">
+            <div className="brandname_content">
+              <div className="brandname_wrapper">
+                <p className="parag1">Aspar İlaç</p>
+                <p className="parag2">Kozmetik Gıda Sanayi A.Ş</p>
+              </div>
+              <div className="whowearediv">
+                <p className="parag3">Biz Kimiz ?</p>
+                <p className="parag5">
+                  İstanbul Beylikdüzünde 5600 m2 alana kurulmuş olan ve yüksek
+                  teknolojiyle donatılmış kompleksimizde tüm süreçler elektronik
+                  sistemlerle takip edilmektedir.
+                </p>
+                <p className="parag4">
+                  Aspar İlaç 10 yılı aşkın bir süredir ulusal ve uluslararası
+                  pazarda doktor ve eczanelerin güven ve beğenisini kazanmıştır.
+                  Kazanmakla beraber başlayan bu serüven yıllar itibariyle
+                  üretim ve değişen sağlık sektörüyle beraber kalite
+                  teknolojisindeki gelişmeleri takip ederek bugünkü modern
+                  şekline ulaşmıştır.
+                  <br />
+                  <br /> 2021 yılından itibaren İstanbul Beysan Sanayi sitesinde
+                  yeni tesisimizde ilaç, kozmetik ve gıda takviye alanlarındaki
+                  satış ve pazarlama organizasyonu Aspar İlaç Kozmetik kurularak
+                  yeniden oluşturulmuştur. Aspar İlaç Dünya genelinde 10,000’den
+                  fazla eczaneye genç ve yenilikçi satış kadroları ile hizmet
+                  sunmaktadır. Güçlü vizyonu, dinamik yapısı ve yenilikçi bakış
+                  açısı ile Aspar İlaç Türkiye’nin önde gelen firmalarındandır.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Header>
+        <ContentContainer>
+          <p className="parag1">İzin Belgelerimiz</p>
+          <p className="parag2">
+            Sağlık Otoriteleri tarafından onaylanmış olan tesisimiz,
+          </p>
+          <div className="belge_container">
+              
+            </div>
+        </ContentContainer>
+      </Container> */
+}
+
+// export const ContentContainer = styled.div`
+//   position: relative;
+//   width: 100%;
+//   padding: 50px 120px 50px 120px;
+//   background-color: white;
+
+//   .parag1 {
+//     font-size: 20px;
+//     font-weight: 400;
+//     font-style: italic;
+//   }
+
+//   .parag2 {
+//     margin-top: 10px;
+//     font-size: 17px;
+//     font-weight: 350;
+//   }
+// `;
+
+// export const Container = styled.div`
+//   width: 100%;
+//   position: block;
+//   display: flex;
+//   flex-direction:column ;
+// `;
+// export const Header = styled.div`
+//   width: 100%;
+//   height: 500px;
+//   max-height: 500px;
+//   position: relative;
+//   display: flex;
+//   overflow: hidden;
+
+//   @media screen and (max-width: 1000px) {
+//     flex-direction: column;
+//     overflow: unset;
+//     /* height: 100%; */
+//   }
+
+//   .image_containern {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+
+//     img {
+//       height: 100%;
+//     }
+//   }
+
+//   .text_content {
+//     background-color: #c1c4cf;
+//     width: 100%;
+//     height: 100%;
+
+//     @media screen and (max-width: 1000px) {
+//       padding-top: 15px;
+//       background-color: white;
+//     }
+
+//     .brandname_content {
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       margin: 0 200px 0 20px;
+//       margin-top: 50px;
+//       .brandname_wrapper {
+//         .parag1 {
+//           font-size: 30px;
+//           font-weight: 700;
+//           color: #1c39a1;
+//         }
+//         .parag2 {
+//           font-size: 27px;
+//           font-weight: 400;
+//           /* font-style:italic ; */
+//         }
+//       }
+
+//       .whowearediv {
+//         margin-top: 30px;
+
+//         .parag3 {
+//           font-size: 20px;
+//           /* color: red ; */
+//           font-weight: 400;
+//           font-style: italic;
+//         }
+
+//         .parag4 {
+//           margin-top: 15px;
+//           font-size: 17px;
+//           font-weight: 350;
+//         }
+
+//         .parag5 {
+//           margin-top: 10px;
+//           font-style: italic;
+//           color: #1c39a1;
+//           font-weight: 500;
+//         }
+//       }
+
+//       @media screen and (max-width: 1300px) {
+//         margin: 0 20px 0 20px;
+//       }
+//     }
+//   }
+// `;
