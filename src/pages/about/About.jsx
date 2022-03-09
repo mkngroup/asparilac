@@ -223,7 +223,7 @@ export const ContainerWrapper = styled.div`
   }
 
   .left_side_container {
-    background-color: red;
+    /* background-color: red; */
 
     img {
       width: 100%;
