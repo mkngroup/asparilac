@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.22bb1d69.chunk.css",
-    "main.js": "/static/js/main.5c8e1a01.chunk.js",
-    "main.js.map": "/static/js/main.5c8e1a01.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8b6641a7.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8b6641a7.js.map",
-    "static/js/2.2d10952a.chunk.js": "/static/js/2.2d10952a.chunk.js",
-    "static/js/2.2d10952a.chunk.js.map": "/static/js/2.2d10952a.chunk.js.map",
-    "static/js/3.0af72ca4.chunk.js": "/static/js/3.0af72ca4.chunk.js",
-    "static/js/3.0af72ca4.chunk.js.map": "/static/js/3.0af72ca4.chunk.js.map",
+    "main.js": "/static/js/main.9acf83e0.chunk.js",
+    "main.js.map": "/static/js/main.9acf83e0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.08f70990.js",
+    "runtime-main.js.map": "/static/js/runtime-main.08f70990.js.map",
+    "static/js/2.f4432057.chunk.js": "/static/js/2.f4432057.chunk.js",
+    "static/js/2.f4432057.chunk.js.map": "/static/js/2.f4432057.chunk.js.map",
+    "static/js/3.2de721e9.chunk.js": "/static/js/3.2de721e9.chunk.js",
+    "static/js/3.2de721e9.chunk.js.map": "/static/js/3.2de721e9.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.22bb1d69.chunk.css.map": "/static/css/main.22bb1d69.chunk.css.map",
-    "static/js/2.2d10952a.chunk.js.LICENSE.txt": "/static/js/2.2d10952a.chunk.js.LICENSE.txt",
+    "static/js/2.f4432057.chunk.js.LICENSE.txt": "/static/js/2.f4432057.chunk.js.LICENSE.txt",
     "static/media/Headerimg.5ab9b7ea.png": "/static/media/Headerimg.5ab9b7ea.png",
     "static/media/asa.399599e1.jpg": "/static/media/asa.399599e1.jpg",
+    "static/media/asparilacdisgorsel.bd4019d7.jpg": "/static/media/asparilacdisgorsel.bd4019d7.jpg",
     "static/media/asparlogo.db6a13e0.png": "/static/media/asparlogo.db6a13e0.png",
     "static/media/content1.384db75e.jpg": "/static/media/content1.384db75e.jpg",
     "static/media/fasonlogo.d65d4a4a.jpg": "/static/media/fasonlogo.d65d4a4a.jpg",
     "static/media/galaxy.c3bda62c.jpg": "/static/media/galaxy.c3bda62c.jpg",
-    "static/media/galaxyvideo.eec768be.mp4": "/static/media/galaxyvideo.eec768be.mp4",
     "static/media/headerlaboratory.aa4a7ba6.jpg": "/static/media/headerlaboratory.aa4a7ba6.jpg",
     "static/media/headermakinalar.f37e39d6.jpg": "/static/media/headermakinalar.f37e39d6.jpg",
     "static/media/imagecollagen.fbc7260b.jpg": "/static/media/imagecollagen.fbc7260b.jpg",
@@ -31,13 +31,19 @@
     "static/media/logoicon.0d9c847e.png": "/static/media/logoicon.0d9c847e.png",
     "static/media/logolaboratuvar.52313839.jpg": "/static/media/logolaboratuvar.52313839.jpg",
     "static/media/machinelogo.bb2d7012.jpg": "/static/media/machinelogo.bb2d7012.jpg",
+    "static/media/sertifika22000.0ebf8c37.jpg": "/static/media/sertifika22000.0ebf8c37.jpg",
+    "static/media/sertifika22716.8bdb464c.jpg": "/static/media/sertifika22716.8bdb464c.jpg",
+    "static/media/sertifika9001.2b35ad2a.jpg": "/static/media/sertifika9001.2b35ad2a.jpg",
+    "static/media/sertifikahalal.d4ac1818.jpg": "/static/media/sertifikahalal.d4ac1818.jpg",
+    "static/media/sertifikatr34.3e10035d.jpg": "/static/media/sertifikatr34.3e10035d.jpg",
     "static/media/skincareantiaging.21f36e1d.jpg": "/static/media/skincareantiaging.21f36e1d.jpg",
-    "static/media/vitaminlogo.29bd735e.jpg": "/static/media/vitaminlogo.29bd735e.jpg"
+    "static/media/vitaminlogo.29bd735e.jpg": "/static/media/vitaminlogo.29bd735e.jpg",
+    "static/media/world2.27bbf487.jpg": "/static/media/world2.27bbf487.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8b6641a7.js",
-    "static/js/2.2d10952a.chunk.js",
+    "static/js/runtime-main.08f70990.js",
+    "static/js/2.f4432057.chunk.js",
     "static/css/main.22bb1d69.chunk.css",
-    "static/js/main.5c8e1a01.chunk.js"
+    "static/js/main.9acf83e0.chunk.js"
   ]
 }
