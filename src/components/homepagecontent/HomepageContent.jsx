@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as LinkS } from "react-scroll";
 import { Link } from "react-router-dom";
+import {HashLink as LinkH} from 'react-router-hash-link';
 
 import {
   CardContainer,
@@ -33,35 +34,35 @@ const HomepageCard = (props) => {
         <CardContainer>
           <CardWraapper>
             <HeaderText>
-              <Link to={props.linktogroup} className="link_class">
+              <LinkH smooth to={props.linktogroup} className="link_class">
                 <HeaderCircleImg>
                   <img className="imagecard" src={props.cardlogo} alt="" />
                 </HeaderCircleImg>
-              </Link>
+              </LinkH>
 
               <ResponsiveHEaderTitle>
                 <HeaderTitle>
-                  <Link to={props.linktogroup} className="link_class">
+                  <LinkH smooth to={props.linktogroup} className="link_class">
                     <h4>{props.cardgrname} </h4>
-                  </Link>
+                  </LinkH>
                 </HeaderTitle>
                 <HeaderItem>
-                  <Link to={props.linktotitle} className="link_class">
+                  <LinkH smooth to={props.linktotitle} className="link_class">
                     <h4>
                       {props.cardtitle}
                       <span>{props.span_name}</span>
                     </h4>
-                  </Link>
+                  </LinkH>
                 </HeaderItem>
               </ResponsiveHEaderTitle>
 
               <MobileShowMore>
-                <Link to={props.linktogroup} className="link_class">
+                <LinkH smooth to={props.linktogroup} className="link_class">
                   <p>
                     <span className="header_span">Daha Fazla</span>
                     <GoPlus />
                   </p>
-                </Link>
+                </LinkH>
               </MobileShowMore>
             </HeaderText>
 

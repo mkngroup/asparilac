@@ -16,7 +16,7 @@ export const Cartdata = [
     id: "kozmetik-yuztemizleme",
     groupname: "Kozmetik",
     title: "Cilt Bakımı: ",
-    linktogroup: "/production/",
+    linktogroup: "/production/#kozmetik-dermokozmetik",
     linktotitle: "/production/ciltbakimi",
     span_title: "Yüz kırışıklığı Nedeni",
     descrip:

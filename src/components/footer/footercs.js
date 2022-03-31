@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import { FaPhoneAlt } from "react-icons/fa";
 
+export const ExternalLink = styled.a`
+  text-decoration: none;
+  color: white;
+`;
+
 export const Wrapper = styled.div`
   display: block;
   position: relative;
   background-color: #081944;
-  
 `;
 
 export const FooterLogoside = styled.div`
@@ -57,6 +61,26 @@ export const Footer4 = styled.div`
   text-align: center;
   @media screen and (max-width: 900px) {
     margin-bottom: 40px;
+  }
+
+  .lngChange {
+    margin-top: 20px;
+    .lngItems {
+      list-style: none;
+
+      .item {
+        margin-bottom: 5px;
+        
+        .flags {
+          margin-right: 10px;
+        }
+      }
+
+      .lngLink {
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 `;
 

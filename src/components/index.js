@@ -13,6 +13,7 @@ export { default as Pagecontentintro} from './pagecomponents/Pagecontentintro'
 export { default as Pagecontentdescrip} from './pagecomponents/Pagecontentdescrip'
 export { default as Pagealerts} from './pagecomponents/Pagealerts'
 export { default as Fasonuretim} from './pagecomponents/Fasonuretim'
+export { default as ContactForm} from './contactform/ContactForm'
 
 
 export {default as Pageupicon} from './Pageupicon'

@@ -100,19 +100,19 @@ export const Tekbaslangic = {
   shortmenulinksitems: [
     {
       shortmenuitem: "Makinalar ve Kapasiteler",
-      shortmenulink: "#",
+      shortmenulink: "#makinalarvekapasiteler",
     },
     {
       shortmenuitem: "Laboratuvar",
-      shortmenulink: "#",
+      shortmenulink: "#laboratuvar",
     },
     {
       shortmenuitem: "Reklam & Tasarım",
-      shortmenulink: "#",
+      shortmenulink: "#reklamvetasarim",
     },
     {
       shortmenuitem: "Smart Depo",
-      shortmenulink: "#",
+      shortmenulink: "#smartdepo",
     },
   ],
 
@@ -131,21 +131,25 @@ export const Tekbaslangic = {
     {
       contentheadertext: "Makinalar ve Kapasiteler",
       contentheaderlink: "#",
+      contentid:"makinalarvekapasiteler",
       contentdescrip:
         "Üretimde kullandığımız makinalar tamamıyla paslanmaz çelikten oluşur bundan dolayı yüksek derecede hijyenik bir üretim ve paketleme sağlamaktadır. Makinalarımız tam otomatik bir düzenekten oluşur, üretim ve paketleme çok hızlı gerçekleşmektedir.",
     },
     {
       contentheadertext: "Laboratuvar",
+      contentid: "laboratuvar",
       contentheaderlink: "#",
       contentdescrip: "Üretim sonrası çıkan ürünlerin belli değerlerde olması gerekiyor. GMP standartlarına göre fabrikaya gelen hammaddelerin test edilip, izlenebilirlik numarası verilir ve çıkan son ürünlerde belli testlere tabii tutulmaktadır. Laboratuvarımızdaki cihazlarla nem tayini, toz ve sıvı yoğunluğu tespiti, tablet kırılganlığı tespiti, tablet ve kapsül çözünme testi, tablet aşınma testi ve sıkılaştırılmış toz yoğunluğuna bakılmaktadır.",
     },
     {
       contentheadertext: "Reklam & Tasarım",
+      contentid: "reklamvetasarim",
       contentheaderlink: "#",
       contentdescrip: "lorem",
     },
     {
       contentheadertext: "Smart Depo",
+      contentid: "smartdepo",
       contentheaderlink: "#",
       contentdescrip: "lorem",
     },
@@ -263,35 +267,35 @@ export const Tekmakinalar = {
   shortmenulinksitems: [
     {
       shortmenuitem: "Kapsül Dolum Makinası",
-      shortmenulink: "#",
+      shortmenulink: "#kapsuldolummakinasi",
     },
     {
       shortmenuitem: "Granül ve Toz Karıştırıcı",
-      shortmenulink: "#",
+      shortmenulink: "#granultozkaristirici",
     },
     {
       shortmenuitem: "Yarı Otomatik Shrink Paketleme Makinası",
-      shortmenulink: "#",
+      shortmenulink: "#yariotomatikshrink",
     },
     {
       shortmenuitem: "Granül Paketleme Makinası",
-      shortmenulink: "#",
+      shortmenulink: "#granulpaketleme",
     },
     {
       shortmenuitem: "Çok Zımbalı Tablet Pres Makinası",
-      shortmenulink: "#",
+      shortmenulink: "#cokzimbalitabletmakinasi",
     },
     {
       shortmenuitem: "Kapsül Parlatma Makinası",
-      shortmenulink: "#",
+      shortmenulink: "#kapsulparlatmamakinesi",
     },
     {
       shortmenuitem: "Kapsül Sayma Makinası",
-      shortmenulink: "#",
+      shortmenulink: "#kapsulsaymamakinasi",
     },
     {
       shortmenuitem: "Krem ve Sıvı Karıştırma Kazanı",
-      shortmenulink: "#",
+      shortmenulink: "#kremvesivikaristirma",
     },
   ],
 
@@ -309,42 +313,50 @@ export const Tekmakinalar = {
   contents: [
     {
       contentheadertext: "Kapsül Dolum Makinası",
+      contentid: "kapsuldolummakinasi",
       contentheaderlink: "#",
       contentdescrip:
         "Gıda takviyesi, ilaç, prebiotik, hayvansal ilaçlar, ekstraktlar vb. kapsül çeşitlerinin üretimini yapabiliriz. Tek personel ile saatte 60 000 kapsül üretim kapasitesine ulaşabiliriz. Otomatik kapsül dolum makinası, dolum bölümündeki hız ayarları sayesinde, hassas dozajlama yapabiliriz. Birçok kapsül boyutunda ve farklı gramaj ayarlarında çalışabiliriz. (000, 00, 0, 1, 2, 3, 4, 5)",
     },
     {
       contentheadertext: "Granül ve Toz Karıştırıcı",
+      contentid: "granultozkaristirici",
       contentheaderlink: "#",
       contentdescrip: "Ribon tipi karıştırıcı ile toz-toz, toz-granül, granül-granül ve rutubetlendirme karışımlar yapılabilmekteyiz. Ribon tipi granül ve toz karıştırıcı üç yönlü helezon sistemine sahiptir. Bu sistem sayesinde aynı anda karışımı yapılan ürünü 3 yöne birden çekerek tam homojen karışımlar yapabiliyoruz. Karışımın tamamlanması için geçen süre benzer karıştırıcılara göre çok daha kısa sürer. Bu sayede üretim performansı artar. Makinanın kapasitesi 500 litredir. ",
     },
     {
       contentheadertext: "Yarı Otomatik Shrink Paketleme Makinası",
+      contentid: "yariotomatikshrink",
       contentheaderlink: "#",
       contentdescrip: "Ürünlerinizi shirinklenmiş olarak paketleyebiliriz kapsül parlatma. Uzun mesafeli gönderimlere uygun olarak paketleme yapabiliriz.",
     },
     {
       contentheadertext: "Granül Paketleme Makinası",
+      contentid: "granulpaketleme",
       contentheaderlink: "#",
       contentdescrip: "-	1g-200g arası hassas toz ve sıvı dolum yapabiliyoruz. Dakikada 40 adet basabiliyoruz. Makine paslanmaz kromdan oluştuğu için dolumlar son derece hijyenik ortamda dolum ve paketleme yapılmaktadır. Ayarlanabilir yapıştırma çeneleri sayesinde, ince ve kalın birçok ambalaj çeşidinde sorunsuzca çalışabiliriz.",
     },
     {
       contentheadertext: "Çok Zımbalı Tablet Pres Makinası",
+      contentid: "cokzimbalitabletmakinasi",
       contentheaderlink: "#",
       contentdescrip: "Hijyenik üretim ortamına uygun olarak tasarlanan bu makina, başta gıda olmak üzere birçok ürün çeşidinde kullanmaktayız. Gezer kafa tablet pres makinası çok zımbalı, GMP şartlarına uyum sağlayan bir üretim ortamı oluştururuz. Makinanın tüm yüzeyleri paslanmaz materyalden üretilmiştir bundan dolayı hijyenik bir üretim sağlamaktayız. 18mm-13mm tablet aralığında 151200adet/saat üretim yapmaktayız. Kalıplarını değiştirerek farklı şekil ve gramajlarda müşteri isteğine göre tablet basabilmekteyiz.",
     },
     {
       contentheadertext: "Kapsül Parlatma Makinası",
+      contentid: "kapsulparlatmamakinesi",
       contentheaderlink: "#",
       contentdescrip: "Üretimden çıkan kapsüller parlatılır ve blistere girer. 5000 adet/dakika kapsül parlatmaktayız.",
     },
     {
       contentheadertext: "Kapsül Sayma Makinası",
+      contentid: "kapsulsaymamakinasi",
       contentheaderlink: "#",
       contentdescrip: "Ürününüz ambalaj şekli şişe ise kapsül ve tablet çok kısa sürede el değmeden sayılabilmektedir.",
     },
     {
       contentheadertext: "Krem ve Sıvı Karıştırma Kazanı",
+      contentid: "kremvesivikaristirma",
       contentheaderlink: "#",
       contentdescrip: "Sıvı karıştırma tank çeşitlerimiz(1 ton, 1.5 ton, 0,5 ton) tam homojen karışım yapma özelliğine sahiptir. Tanklarımız paslanmaz çelikten oluştuğu için ürünlerimiz çok hijyenik şekilde yapılmaktadır.",
     },
@@ -458,35 +470,35 @@ export const Teklaboratuvar = {
   shortmenulinksitems: [
     {
       shortmenuitem: "Kalite Kontrol",
-      shortmenulink: "#",
+      shortmenulink: "#kalitekontrol",
     },
     {
       shortmenuitem: "Tablet Sıkıştırılabilirliği (Friabilite) Test Cihazı",
-      shortmenulink: "#",
+      shortmenulink: "#tabletsikilastirilabilirligi",
     },
     {
       shortmenuitem: "Tablet ve kapsül çözünme testi",
-      shortmenulink: "#",
+      shortmenulink: "#tabletkapsulcozunme",
     },
     {
       shortmenuitem: "Tablet Sertlik Cihazı",
-      shortmenulink: "#",
+      shortmenulink: "#tabletsertlik",
     },
     {
       shortmenuitem: "Nem Tayin Cihazı",
-      shortmenulink: "#",
+      shortmenulink: "#nemtayin",
     },
     {
       shortmenuitem: "Tozlarda ve sıvılarda yoğunluk tayini",
-      shortmenulink: "#",
+      shortmenulink: "#tozlardasivilardayogunluk",
     },
     {
       shortmenuitem: "Tozlarda sıkılaştırılmış (Tapped) yoğunluk testi",
-      shortmenulink: "#",
+      shortmenulink: "#tozlardasikilastirilmis",
     },
     {
       shortmenuitem: "Disintegrasyon Cihazı",
-      shortmenulink: "#",
+      shortmenulink: "#disintegrasyon",
     },
   ],
 
@@ -504,42 +516,50 @@ export const Teklaboratuvar = {
   contents: [
     {
       contentheadertext: "Kalite Kontrol",
+      contentid: "kalitekontrol",
       contentheaderlink: "#",
       contentdescrip:
         "Üretim sonrası çıkan ürünlerin belli değerlerde olması gerekiyor. GMP standartlarına göre fabrikaya gelen hammaddelerin test edilip, izlenebilirlik numarası verilir ve çıkan son ürünlerde belli testlere tabii tutulmaktadır. Laboratuvarımızdaki cihazlarla nem tayini, toz ve sıvı yoğunluğu tespiti, tablet kırılganlığı tespiti, tablet ve kapsül çözünme testi, tablet aşınma testi ve sıkılaştırılmış toz yoğunluğuna bakılmaktadır.",
     },
     {
       contentheadertext: "Tablet Sıkıştırılabilirliği (Friabilite) Test Cihazı",
+      contentid: "tabletsikilastirilabilirligi",
       contentheaderlink: "#",
       contentdescrip: "Farmakopiye uygun olarak ayarlanmış test cihazıdır. Numune tablet basıldıktan sonra gevrekliği ve aşınma testi uygulanır eğer uygunsa üretime geçilir.",
     },
     {
       contentheadertext: "Tablet ve kapsül çözünme testi",
+      contentid: "tabletkapsulcozunme",
       contentheaderlink: "#",
       contentdescrip: "Tablet ve kapsüllerin üretiminden sonra alınan numune, mide ortamını özelliklerini içeren cihazlarda çözünme süresini belirler.",
     },
     {
       contentheadertext: "Tablet Sertlik Cihazı",
+      contentid: "tabletsertlik",
       contentheaderlink: "#",
       contentdescrip: "Tabletler çok sert olmasını durumunda çözünmesi zorlaşabilir.",
     },
     {
       contentheadertext: "Nem Tayin Cihazı",
+      contentid: "nemtayin",
       contentheaderlink: "#",
       contentdescrip: "Üretimden çıkan üründe nem tayini yapılır nem çok yüksek olmaması lazım.",
     },
     {
       contentheadertext: "Tozlarda ve sıvılarda yoğunluk tayini",
+      contentid: "tozlardasivilardayogunluk",
       contentheaderlink: "#",
       contentdescrip: "Sıvılarda yoğunluk piknometre, dansimetre kullanılmaktadır. Tozlarda hata payı çok az mezürler kullanılmaktadır.",
     },
     {
       contentheadertext: "Tozlarda sıkılaştırılmış (Tapped) yoğunluk testi",
+      contentid: "tozlardasikilastirilmis",
       contentheaderlink: "#",
       contentdescrip: "Tozların arasındaki mikro düzeydeki boşluklar olmadan yoğunluğu ölçen cihazdır.",
     },
     {
       contentheadertext: "Disintegrasyon Cihazı",
+      contentid: "disintegrasyon",
       contentheaderlink: "#",
       contentdescrip: "Tablet, kapsül ve diğer katı dozaj formlarının parçalanma sürelerinin manuel olarak test edilmesi içinkullanmaktayız.",
     },

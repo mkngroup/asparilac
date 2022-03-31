@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import styled from "styled-components";
+import { HashLink as LinkH } from "react-router-hash-link";
 
 import { Container } from "./pagecontentintrocs";
 
@@ -27,7 +28,6 @@ const Pagecontentintro = (props) => {
         <p className={props.parag4_class}>
           {props.parag4} <span className="parag_span">{props.parag4_span}</span>
         </p>
-        
       </div>
 
       {/* menuler */}
@@ -40,21 +40,23 @@ const Pagecontentintro = (props) => {
             //   <li className="short_menu_links">{data.shortmenuitem}</li>
             // </LinkS>
 
-            <a href={data.shortmenulink}  className="sm_link">
+            // <a href={data.shortmenulink}  className="sm_link">
+            //   <li className="short_menu_links">{data.shortmenuitem}</li>
+            // </a>
+
+            <LinkH className="sm_link" smooth to={data.shortmenulink}>
               <li className="short_menu_links">{data.shortmenuitem}</li>
-            </a>
-          
-            
+            </LinkH>
           );
         })}
       </ul>
       <div className="container_tesis">
-          <Tesisimiz
-            table1_class={props.table1_class}
-            table1_headertext={props.table1_headertext}
-            table1_items={props.table1_items}
-          />
-        </div>
+        <Tesisimiz
+          table1_class={props.table1_class}
+          table1_headertext={props.table1_headertext}
+          table1_items={props.table1_items}
+        />
+      </div>
     </Container>
   );
 };
@@ -93,7 +95,7 @@ const Tablecontainer = styled.div`
 
     @media screen and (max-width: 1000px) {
       grid-template-columns: 50% 50%;
-      padding:  0 10px 50px 10px;
+      padding: 0 10px 50px 10px;
     }
 
     .grid_items {
@@ -105,27 +107,26 @@ const Tablecontainer = styled.div`
       border: 0.5px solid white;
       color: white;
       text-align: center;
-      transition:all 1s ease-in-out;
+      transition: all 1s ease-in-out;
       cursor: pointer;
       padding: 0 5px 0 5px;
 
       @media screen and (max-width: 1000px) {
         height: 250px;
       }
-      &:hover{
-        span{
+      &:hover {
+        span {
           transform: scale(1.3);
         }
       }
-      span{
+      span {
         font-size: 30px;
         margin-bottom: 5px;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
       }
-      h3{
-        
+      h3 {
       }
-      p{
+      p {
         margin-top: 5px;
         font-size: 14px;
       }
@@ -145,13 +146,13 @@ const Tesisimiz = (props) => {
             {props.table1_items.map((data, index) => {
               return (
                 <>
-                <div className="grid_items">
-                  <span>{data.icons}</span>
-                  <h4>{data.title}</h4>
-                  <p>{data.text}</p>
-                </div>
+                  <div className="grid_items">
+                    <span>{data.icons}</span>
+                    <h4>{data.title}</h4>
+                    <p>{data.text}</p>
+                  </div>
                 </>
-              )
+              );
             })}
           </div>
         </div>

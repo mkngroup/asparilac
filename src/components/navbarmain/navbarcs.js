@@ -36,7 +36,7 @@ export const Sidebar_toggle = styled.div`
       overflow: auto;
       padding: 40px 0;
       list-style-type: none;
-      
+
       li {
         padding: 15px;
         color: whitesmoke;
@@ -45,19 +45,35 @@ export const Sidebar_toggle = styled.div`
           Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
         font-weight: 500;
       }
-      .menu_links{
+      .menu_links {
+        text-decoration: none;
+      }
+
+      .lngMobileSelect {
+        /* background-color: red; */
+
+        .lngMenu {
           text-decoration: none;
+        }
+
+        .lngItem {
+          list-style: none;
+          font-size: 20px ;
+          color: white ;
+          display: flex ;
+          align-items: flex-start ;
+        }
       }
     }
     .sidebar_logo {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        .sidebar_img{
-            width: 180px;
-        }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      .sidebar_img {
+        width: 180px;
+      }
     }
   }
   .sidebar_none {
@@ -98,7 +114,6 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 17px;
   max-width: 1290px;
- 
 
   @media screen and (max-width: 900px) {
     display: flex;
@@ -126,8 +141,8 @@ export const MobileIcon = styled.div`
   display: none;
   align-items: center;
 
-  .navbar_hamburger_link{
-      text-decoration: none;
+  .navbar_hamburger_link {
+    text-decoration: none;
   }
 
   @media screen and (max-width: 900px) {
@@ -155,8 +170,7 @@ export const NavItem = styled.li`
   align-items: center;
 `;
 export const NavLinks = styled(Link)`
-  /* margin-right: 10px;
-    margin-left: 10px; */
+
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
@@ -228,9 +242,17 @@ export const SearchBtn = styled.button`
   }
 `;
 
-export const NavLanguage = styled(Link)`
+export const NavLanguage = styled.div`
   text-decoration: none;
   font-size: 25px;
   cursor: pointer;
   color: black;
+  position: relative;
+
+  .lngchange_active {
+    position: relative;
+  }
+  .lngchange_deactive {
+    display: none;
+  }
 `;

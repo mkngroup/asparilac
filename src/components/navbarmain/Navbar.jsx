@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ReactCountryFlag from "react-country-flag";
 
 import { FaBars, FaLanguage, FaSearch } from "react-icons/fa";
 import { IoLanguageOutline, IoClose } from "react-icons/io5";
@@ -22,11 +23,14 @@ import {
   SearchBtn,
   Sidebar_toggle,
 } from "./navbarcs";
+import DropdownLng from "../DropdownLng";
 
 const NavBarMain = () => {
-  
   const [Sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!Sidebar);
+
+  const [Lngdrop, setLngDrop] = useState(false);
+  const showLngdrop = () => setLngDrop(!Lngdrop);
 
   return (
     <>
@@ -42,11 +46,21 @@ const NavBarMain = () => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="/about">Hakkimizda</NavLinks>
-              <NavLinks to="/production">Uretim</NavLinks>
-              <NavLinks to="/technology">Teknoloji</NavLinks>
-              <NavLinks to="/contact">Iletisim</NavLinks>
-              <NavLinks to="/blog">Blog</NavLinks>
+              <div>
+                <NavLinks to="/about">Hakkımızda</NavLinks>
+              </div>
+              <div>
+                <NavLinks to="/production">Üretim</NavLinks>
+              </div>
+              <div>
+                <NavLinks to="/technology">Teknoloji</NavLinks>
+              </div>
+              <div>
+                <NavLinks to="/contact">İletişim</NavLinks>
+              </div>
+              <div>
+                <NavLinks to="/blog">Blog</NavLinks>
+              </div>
             </NavItem>
           </NavMenu>
           <RightMenu>
@@ -56,9 +70,7 @@ const NavBarMain = () => {
                 <FaSearch />
               </SearchBtn>
             </NavSearch>
-            <NavLanguage to="/">
-              <IoLanguageOutline />
-            </NavLanguage>
+            <div className="lngLocation"></div>
           </RightMenu>
         </NavbarContainer>
       </Nav>
@@ -72,29 +84,82 @@ const NavBarMain = () => {
           <ul className="menu_container">
             <Link className="menu_links" to="/about" onClick={showSidebar}>
               <li>
-                <span></span>Hakkimizda
+                <span></span>Hakkımızda
               </li>
             </Link>
-            <Link className="menu_links"  to="/production" onClick={showSidebar}>
+            <Link className="menu_links" to="/production" onClick={showSidebar}>
               <li>
-                <span></span>Uretim
+                <span></span>Üretim Bölümü
               </li>
             </Link>
-            <Link className="menu_links"  to="/technology" onClick={showSidebar}>
+            <Link className="menu_links" to="/technology" onClick={showSidebar}>
               <li>
-                <span></span>Teknoloji
+                <span></span>Teknoloji Bölümü
               </li>
             </Link>
-            <Link className="menu_links"  to="/contact" onClick={showSidebar}>
+            <Link
+              className="menu_links"
+              to="/production/fasonuretim"
+              onClick={showSidebar}
+            >
               <li>
-                <span></span>Iletisim
+                <span></span>Fason Üretimi
               </li>
             </Link>
-            <Link className="menu_links"  to="/blog" onClick={showSidebar}>
+            <Link className="menu_links" to="/contact" onClick={showSidebar}>
+              <li>
+                <span></span>İletişim
+              </li>
+            </Link>
+            <Link className="menu_links" to="/blog" onClick={showSidebar}>
               <li>
                 <span></span>Blog
               </li>
             </Link>
+            <hr style={{ width: "90%", margin: "20px 0 10px 0" }} />
+            <div className="lngMobileSelect">
+              <ul className="lngMenu">
+                <li className="lngItem">
+                  <span>
+                    <ReactCountryFlag
+                      countryCode="TR"
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        marginRight: "10px",
+                      }}
+                      svg
+                    />
+                  </span>
+                  <a
+                    href="#Weglot-tr"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Türkçe
+                  </a>
+                </li>
+                <li className="lngItem">
+                  <span>
+                    <ReactCountryFlag
+                      countryCode="RU"
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        marginRight: "10px",
+                      }}
+                      svg
+                    />
+                  </span>
+                  <a
+                    href="#Weglot-ru"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Rusça
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr style={{ width: "90%", margin: "20px 0 10px 0" }} />
           </ul>
           <div className="sidebar_logo">
             <Link to="/" onClick={showSidebar}>

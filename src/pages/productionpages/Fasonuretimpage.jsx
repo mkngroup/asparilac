@@ -3,10 +3,14 @@ import styled from "styled-components";
 import { Pagecontentintro, PageSidebar, Pageupicon } from "../../components";
 import { Mobilepagesidebar } from "../../components/pagesidebar/PageSidebar";
 import { SidebarHeader, TabData } from "../../data/pagestabcontent";
-
+import {Helmet} from "react-helmet"
 const Fasonuretimpage = () => {
   return (
     <>
+    <Helmet>
+      <title>Aspar İlaç - Fason Üretimi</title>
+      <meta name="description" content="Aspar İlaç - Ar-Ge Merkezi Formülasyon ve Metot Geliştirme yöntemleriyle analitik geliştirme yeteneği ve altyapısına sahiptir"/>
+    </Helmet>
       <PageContainer>
         <div className="fason_sidebar">
           <PageSidebar

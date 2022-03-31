@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Navbar } from "../../components";
+import { Footer, Navbar } from "../../components";
 import { GiWorld } from "react-icons/gi";
 import asparilacdisgorsel from "../../assets/asparilacdisgorsel.jpg";
 import sertifika9001 from "../../assets/sertifika9001.jpg";
@@ -9,10 +9,14 @@ import sertifika22716 from "../../assets/sertifika22716.jpg";
 import sertifikahalal from "../../assets/sertifikahalal.jpg";
 import sertifikatr34 from "../../assets/sertifikatr34.jpg";
 import world2 from "../../assets/world2.jpg";
-
+import {Helmet} from "react-helmet"
 const About = () => {
   return (
     <>
+    <Helmet>
+      <title>Aspar İlaç - Hakkımızda</title>
+      <meta name="description" content="Aspar İlaç - Ar-Ge Merkezi Formülasyon ve Metot Geliştirme yöntemleriyle analitik geliştirme yeteneği ve altyapısına sahiptir"/>
+    </Helmet>
       <AboutContainer />
     </>
   );
@@ -186,6 +190,9 @@ const AboutContainer = () => {
                 </div>
               </div>
             </div>
+            <div className="text_footer">
+              <Footer />
+            </div>
           </div>
         </ContainerWrapper>
       </Container>
@@ -233,7 +240,7 @@ export const ContainerWrapper = styled.div`
   }
   .right_side_container {
     /* background-color: green; */
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     height: 88.7%;
     overflow: auto;
 
@@ -421,14 +428,12 @@ export const ContainerWrapper = styled.div`
           display: flex;
           flex-direction: column-reverse;
           margin-top: 20px;
-          
         }
         .text_side {
-
           @media screen and (max-width: 800px) {
-            display: grid ;
-            grid-template-columns: 50% 50% ;
-            margin-top: 50px ;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 50px;
           }
 
           p {
@@ -448,6 +453,9 @@ export const ContainerWrapper = styled.div`
           }
         }
       }
+    }
+    .text_footer{
+      margin-top: 25px ;
     }
   }
 `;

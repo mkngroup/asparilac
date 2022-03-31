@@ -7,10 +7,10 @@ import { Container } from "./fasonuretimcs";
 
 const Fasonuretim = () => {
   return (
-    <Container>
+    <Container >
       <Link to="#" className="fason_link">
         <h3>
-          <div className="fason_header_icon">
+          <div className="fason_header_icon" id="#fason-uretim">
             <FaLink />
           </div>
           Fason Üretimi

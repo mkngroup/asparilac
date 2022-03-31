@@ -51,14 +51,18 @@ const Secondnav = () => {
               <NavLinks to="vitamin-cvitamin" smooth={true}>
                 Gıda Takviyesi{" "}
               </NavLinks>
+              <NavLinks to="uretim-fason" smooth={true}>
+                Fason Üretimi{" "}
+              </NavLinks>
+              <NavLinks to="vitamin-cvitamin" smooth={true}>
+                Vitamin
+              </NavLinks>
               <NavLinks to="kozmetik-yuztemizleme" smooth={true}>
-                Kozmetik{" "}
+                Kozmetik
               </NavLinks>
-              <NavLinks to="kapsul-gidatakviyesi" smooth={true}>
-                Kapsul
+              <NavLinks to="laboratuvar-home" smooth={true}>
+                Laboratuvar
               </NavLinks>
-              <NavLinks to="/">Cinsel - Saglik</NavLinks>
-              <NavLinks to="/">Surup</NavLinks>
             </NavItem>
           </NavMenu>
         </Container>
@@ -74,27 +78,27 @@ const Newmobilenav = () => {
     <>
       <NewMobileNav>
         <NewMobileNavLinks to="gida-kolajen-tip4" smooth={true}>
-        Gıda Takviyesi
+          Gıda Takviyesi
         </NewMobileNavLinks>
         <p className="nav-line">|</p>
         <NewMobileNavLinks to="uretim-fason" smooth={true}>
-        Fason Üretimi
+          Fason Üretimi
         </NewMobileNavLinks>
         <p className="nav-line">|</p>
         <NewMobileNavLinks to="vitamin-cvitamin" smooth={true}>
-        Vitamim
+          Vitamin
         </NewMobileNavLinks>
         <p className="nav-line">|</p>
         <NewMobileNavLinks to="kozmetik-yuztemizleme" smooth={true}>
-        Kozmetik
+          Kozmetik
         </NewMobileNavLinks>
         <p className="nav-line">|</p>
         <NewMobileNavLinks to="laboratuvar-home" smooth={true}>
-        Laboratuvar
+          Laboratuvar
         </NewMobileNavLinks>
         <p className="nav-line">|</p>
         <NewMobileNavLinks to="makinalar-kapsuldolum" smooth={true}>
-        Makinalar
+          Makinalar
         </NewMobileNavLinks>
         <p className="nav-line">|</p>
       </NewMobileNav>
@@ -107,7 +111,7 @@ export const NewMobileNav = styled.li`
 
   .nav-line {
     color: #ffa500;
-    margin: 0 10px 0 10px ;
+    margin: 0 10px 0 10px;
   }
 
   @media screen and (max-width: 500px) {
@@ -120,7 +124,6 @@ export const NewMobileNav = styled.li`
 `;
 
 export const NewMobileNavLinks = styled(LinkS)`
- 
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;

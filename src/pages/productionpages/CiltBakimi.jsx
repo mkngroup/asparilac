@@ -4,10 +4,14 @@ import { SayfaCiltbakimi, Yuzbakimiintro } from "../../data/pagescontents";
 
 import { PageContent, PageSidebar } from "../../components";
 import { SidebarHeader, TabData } from "../../data/pagestabcontent";
-
+import {Helmet} from "react-helmet"
 const CiltBakimi = () => {
   return (
     <>
+    <Helmet>
+      <title>Aspar İlaç - Cilt Bakımı</title>
+      <meta name="description" content="Aspar İlaç - Ar-Ge Merkezi Formülasyon ve Metot Geliştirme yöntemleriyle analitik geliştirme yeteneği ve altyapısına sahiptir"/>
+    </Helmet>
       <PageContent
         tabdata={TabData}
         contentDataName={SayfaCiltbakimi}

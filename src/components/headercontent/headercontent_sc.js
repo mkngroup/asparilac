@@ -25,7 +25,7 @@ export const Container = styled.div`
       margin: 0 auto;
       position: relative;
     }
-    .text_container {
+    .text_container_001 {
 
       display: flex;
       flex-direction: column;

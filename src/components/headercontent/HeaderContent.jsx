@@ -37,7 +37,7 @@ const HeaderContent = () => {
         </div>
         <div className="button_container">
           <Link to="/production" className="button1">
-            ÜRETIM BÖLÜMÜ KEŞFET
+            ÜRETIM BÖLÜMÜNÜ KEŞFET
           </Link>
           <Link
             to="/contact"
@@ -53,7 +53,7 @@ const HeaderContent = () => {
       </div>
       <div className="desktop">
         <img src={asa} alt="asparilac" />
-        <div className="text_container">
+        <div className="text_container_001">
           <h1>ASPAR İLAÇ KOZMETİK GIDA SANAYİ A.Ş</h1>
           <p>
             10 yılı aşkın tecrübe ve deneyimi ile Aspar İlaç değişen ve gelişen

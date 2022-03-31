@@ -24,6 +24,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script
+      type="text/javascript"
+      src="https://cdn.weglot.com/weglot.min.js"
+    ></script>
+    <script>
+      Weglot.initialize({
+        api_key: "wg_1f2e8ee9893eee477f97e5c9654c39ce7",
+
+        cache: "true",
+        switchers: [
+          {
+            location: {
+              target: ".lngLocation",
+              sibling: null,
+            },
+
+            style: {
+              with_flags: "true",
+              full_name: "false"
+            }
+          },
+        ],
+        auto_switch: true,
+        auto_switch_fallback: "tr",
+        wait_transition: true,
+
+        // hide_switcher: "true",
+      });
+    </script>
     <title>Aspar İlaç</title>
   </head>
   <body>
