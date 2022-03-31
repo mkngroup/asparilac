@@ -30,7 +30,7 @@ import ScrollToTop from "./components/ScrollToTop";
 class App extends Component {
   render() {
     return (
-      <Router basename="/">
+      <Router>
         <ScrollToTop>
           <Routes>
             <Route exact path="/" element={<Homepage />} />
