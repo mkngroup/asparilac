@@ -1,6 +1,5 @@
 import React, { Component, Suspense } from "react";
 import "./App.css";
-
 import {
   CiltBakimi,
   Yuzbakimi,
@@ -23,9 +22,9 @@ import {
   Production,
   Technology,
 } from "../src/pages";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+
 
 class App extends Component {
   render() {
