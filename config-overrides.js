@@ -1,7 +1,14 @@
 module.exports = {
+  entry: "./src/app/index.js",
+  output: {
+      path: path.resolve(__dirname, 'build'),
+      publicPath: 'build',
+      filename: 'bundle-main.js'
+  },
   devServer: {
-    historyApiFallback: true,
-    contentBase: './',
-    hot: true
- },
+      historyApiFallback:{
+          index:'build/index.html'
+      },
+  },
 };
+
