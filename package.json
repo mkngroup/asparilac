@@ -25,10 +25,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "eject": "react-app-rewired eject",
     "deploy": "gh-pages -d build",
     "postbuild": "react-snap"
   },
