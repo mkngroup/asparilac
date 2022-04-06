@@ -3,6 +3,6 @@ module.exports = function override(config, env) {
         historyApiFallback: true
     }
 
-    historyApiFallback = true
+    
     return config
 }
