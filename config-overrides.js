@@ -1,8 +1,7 @@
 module.exports = {
-  webpack: function (config, env) {
-    devServer: {
-      historyApiFallback: true;
-    }
-    return config;
-  },
+  devServer: {
+    historyApiFallback: true,
+    contentBase: './',
+    hot: true
+ },
 };
